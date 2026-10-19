@@ -45,25 +45,14 @@ if ($DryRun) { $args += '--dry-run' }
 $code = $LASTEXITCODE
 Write-Log "가드레일 종료 exit=$code"
 
-# exit 2 = 만료 처리한 항목이 있다 → manifest 갱신 + push
+# exit 2 = 만료 처리한 항목이 있다 → manifest 만 갱신 (업로드는 클라우드 작업이)
 if ($code -eq 2 -and -not $DryRun) {
     try {
-        if (Test-Path (Join-Path $Root '.git')) {
-            & $py (Join-Path $Here 'build_manifest.py') $Root (Join-Path $Root 'docs') 2>&1 |
-                ForEach-Object { Write-Log "  $_" }
-            Push-Location $Root
-            try {
-                git add docs data 2>&1 | Out-Null
-                if ((git status --porcelain docs data) -join '') {
-                    git commit -m ("auto: " + (Get-Date -Format 'yyyy-MM-dd') + " 가드레일 보류") 2>&1 |
-                        ForEach-Object { Write-Log "  git: $_" }
-                    git push 2>&1 | ForEach-Object { Write-Log "  git: $_" }
-                    Write-Log '가드레일 결과 push 완료'
-                }
-            } finally { Pop-Location }
-        }
+        & $py (Join-Path $Here 'build_manifest.py') $Root (Join-Path $Root 'docs') 2>&1 |
+            ForEach-Object { Write-Log "  $_" }
+        Write-Log '가드레일 결과 manifest 반영 (업로드는 클라우드 예약 작업이 담당)'
     } catch {
-        Write-Log "가드레일 push 실패: $($_.Exception.Message)" 'WARN'
+        Write-Log "manifest 갱신 실패: $($_.Exception.Message)" 'WARN'
     }
 }
 exit 0

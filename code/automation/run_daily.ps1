@@ -237,38 +237,22 @@ try {
         Write-Log "사람 확인 필요 — status=$status" 'WARN'
     }
 
-    # ── 대시보드 갱신 + GitHub push ─────────────────────────────────────
-    # manifest 를 다시 만들고(코드/데이터 분리: 대시보드는 이 인덱스만 읽는다)
-    # docs 와 data 를 저장소에 올린다. Pages 가 자동 재배포되어 폰에서 갱신된다.
-    # 이 블록이 실패해도 파이프라인 전체를 죽이지 않는다 (카드는 이미 만들어졌다).
+    # ── manifest 만 갱신 (업로드·push 는 클라우드 예약 작업이 담당) ──────
+    # GitHub 업로드와 폰 푸시 알림은 클라우드 예약 작업
+    # "AICX 인스타 결과 → GitHub 자동 업로드"(매일 아침)가 한다.
+    # 여기서는 대시보드 인덱스(manifest)만 최신으로 만들어 두어,
+    # 클라우드가 그대로 올리기만 하면 되게 한다. (PC 는 push 하지 않는다 — 중복 방지)
     if (-not $DryRun) {
         try {
-            if (Test-Path (Join-Path $Root '.git')) {
-                $py = (Get-Command python -ErrorAction SilentlyContinue).Source
-                if (-not $py) { $py = (Get-Command py -ErrorAction SilentlyContinue).Source }
-                if ($py) {
-                    Write-Log 'manifest 재생성 …'
-                    & $py (Join-Path $Here 'build_manifest.py') $Root $DocsDir 2>&1 |
-                        ForEach-Object { Write-Log "  $_" }
-                }
-                Push-Location $Root
-                try {
-                    git add docs data 2>&1 | Out-Null
-                    $staged = (git status --porcelain docs data) -join ''
-                    if ($staged) {
-                        $msg = 'auto: ' + (Get-Date -Format 'yyyy-MM-dd') + ' 콘텐츠'
-                        git commit -m $msg 2>&1 | ForEach-Object { Write-Log "  git: $_" }
-                        git push 2>&1 | ForEach-Object { Write-Log "  git: $_" }
-                        Write-Log '대시보드 push 완료 — 폰에서 곧 갱신된다'
-                    } else {
-                        Write-Log '변경 없음 — push 생략'
-                    }
-                } finally { Pop-Location }
-            } else {
-                Write-Log '.git 이 없다 — 저장소 연결 전이라 push 생략 (셋업 안내서 참고)' 'WARN'
+            $py = (Get-Command python -ErrorAction SilentlyContinue).Source
+            if (-not $py) { $py = (Get-Command py -ErrorAction SilentlyContinue).Source }
+            if ($py) {
+                Write-Log 'manifest 재생성 …'
+                & $py (Join-Path $Here 'build_manifest.py') $Root $DocsDir 2>&1 |
+                    ForEach-Object { Write-Log "  $_" }
             }
         } catch {
-            Write-Log "대시보드 push 실패 (카드는 정상 생성됨): $($_.Exception.Message)" 'WARN'
+            Write-Log "manifest 재생성 실패 (카드는 정상): $($_.Exception.Message)" 'WARN'
         }
     }
 
