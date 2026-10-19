@@ -28,9 +28,15 @@ def read_jsonl(p):
         pass
     return rows
 
+def _pick(root, name):
+    """새 구조(data/<name>)를 우선 쓰되, 옛 구조(<name>)도 하위호환으로 받는다."""
+    new = os.path.join(root, "data", name)
+    old = os.path.join(root, name)
+    return new if os.path.isdir(new) else old
+
 def main(root, docs):
-    output_dir = os.path.join(root, "output")
-    state_dir  = os.path.join(root, "state")
+    output_dir = _pick(root, "output")
+    state_dir  = _pick(root, "state")
     docs_data  = os.path.join(docs, "data")
     docs_cards = os.path.join(docs, "cards")
     os.makedirs(docs_data, exist_ok=True)
