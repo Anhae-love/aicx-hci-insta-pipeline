@@ -23,9 +23,17 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$Here = Split-Path -Parent $MyInvocation.MyCommand.Path
+$Here = Split-Path -Parent $MyInvocation.MyCommand.Path   # …/code/automation
 $Runner = Join-Path $Here 'run_daily.ps1'
 if (-not (Test-Path $Runner)) { throw "run_daily.ps1 이 없다: $Runner" }
+
+# 프로젝트 루트: code/data 분리면 조부모, 평면이면 부모.
+$CodeRoot = Split-Path -Parent $Here
+if ((Split-Path -Leaf $CodeRoot) -eq 'code') {
+    $ProjectRoot = Split-Path -Parent $CodeRoot
+} else {
+    $ProjectRoot = $CodeRoot
+}
 
 function Show-Task {
     $t = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
@@ -64,7 +72,7 @@ if ($RunNow) {
 $action = New-ScheduledTaskAction `
     -Execute 'powershell.exe' `
     -Argument ('-NoProfile -NonInteractive -ExecutionPolicy Bypass -File "{0}"' -f $Runner) `
-    -WorkingDirectory (Split-Path -Parent $Here)
+    -WorkingDirectory $ProjectRoot
 
 $trigger = New-ScheduledTaskTrigger -Daily -At $At
 # 작업 스케줄러 XML은 ISO 8601 기간 문자열만 받는다. TimeSpan 을 넣으면 "02:00:00" 으로
