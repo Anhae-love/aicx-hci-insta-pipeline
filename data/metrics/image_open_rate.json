@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-10-19T16:46:06",
+  "metric": "정상적으로 열리는 이미지 수 / 만들기로 한 이미지 수",
+  "planned": 99,
+  "opened": 99,
+  "rate": 1.0,
+  "rows": [
+    {
+      "kind": "card",
+      "folder": "20260921_AI와_함께하면_빨라질_거라는_기대",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20260922_AI의_위로_메시지와_구체적인_대처법",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20260923_가상현실과_카메라_현실_손이_반대로_틀어진다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20260925_가입은_쉬웠다_해지는_아니었다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20260926_로딩바는_그대로인데_더_빨라_보인다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20260927_알림을_꺼도_안_통하는_사람들이_있다",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20260928_AI를_믿을수록_못_알아봤다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20260929_AI라고_밝혀도_설득은_거의_줄지_않았다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20260930_카메라_너머로_보면_고개를_덜_돌린다",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261001_어느_영상이_더_떴는지_맞히기",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261002_물_마셨을_뿐인데_강의가_처음으로",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261003_자기_열쇠로_잠가서_보냈다",
+      "status": "verify_failed",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20261004_좋아요를_누를수록_광고가_늘었다",
+      "status": "needs_human",
+      "planned": 0,
+      "opened": 0
+    },
+    {
+      "kind": "card",
+      "folder": "20261005_AI_제안마다_이유를_쓰게_한_실험",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261006_산타_핫라인_AI_음성_실험",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261007_VR_비밀번호_풍경_방향과_숫자",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261008_자라는_영상을_올린_새벽_피드_실험",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261009_쇼츠_무한스크롤_멈춤_장치_실험",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261013_비서_이름을_바꾼_사람들의_말투",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261016_기본_비밀번호를_바꾸라는_조언",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261017_방해받으며_메일에_답한_실험",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261018_그만_쓸까_물었을_때와_실제_사용",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "card",
+      "folder": "20261019_AI_추론_단계를_하나씩_되짚어_보니",
+      "status": "awaiting_human_review",
+      "planned": 6,
+      "opened": 6
+    },
+    {
+      "kind": "image_test",
+      "folder": "2026-10-19",
+      "tool": "Figma MCP generate_image (gemini-3.1-flash-lite-image)",
+      "planned": 3,
+      "opened": 3
+    }
+  ]
+}

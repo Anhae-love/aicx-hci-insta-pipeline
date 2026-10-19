@@ -1,0 +1,300 @@
+{
+  "date": "2026-09-22",
+  "weekday_category": "화 — 챗봇, 의인화, 감정, 사회적 상호작용",
+  "content_title": "AI의 위로 메시지와 구체적인 대처법",
+  "source_title": "A Digital Shoulder to Cry On: Understanding Why Large Language Models Can Be Effective in Extrinsic Interpersonal Emotion Regulation",
+  "source_url": "https://doi.org/10.31234/osf.io/nt5d8_v5",
+  "source_access_status": "원문 확인",
+  "is_preprint": false,
+  "selection_sentence": "이 연구는 상상한 속상한 상황에서 AI와 사람이 쓴 위로 쪽지를 읽은 반응을 살펴봤고, 구체적인 대처법이 담긴 쪽지가 더 위로가 된다고 평가되는 경향을 발견했다. 하지만 실제 대화나 시간이 지난 뒤의 효과까지 확인한 것은 아니다.",
+  "candidates": [
+    {
+      "title": "A Digital Shoulder to Cry On: Understanding Why Large Language Models Can Be Effective in Extrinsic Interpersonal Emotion Regulation (Emotion 2026)",
+      "url": "https://doi.org/10.31234/osf.io/nt5d8_v5",
+      "reject_reason": "선정. 동료평가 게재, 무작위 배정 실험 5건, 원문 전문 확인, 단일 오브젝트(쪽지)로 시각화 가능"
+    },
+    {
+      "title": "Anthropomorphism in AI Companion Communities: Age, Gender, and Emotional Correlates",
+      "url": "https://arxiv.org/abs/2606.30942",
+      "reject_reason": "프리프린트이고 핵심이 연령·성별 집단 비교라 1장 훅으로 쓸 수 없다. Reddit 관찰 연구라 상관을 넘는 서술이 어렵다. 초록까지 확인"
+    },
+    {
+      "title": "A Responsive Present, a Shared Past, a Social Other: Teens' Overreliance on Companion AI Chatbots",
+      "url": "https://arxiv.org/abs/2609.14843",
+      "reject_reason": "CHI 2027 심사 중인 프리프린트. 10대·정서적 의존 주제라 헤드라인 강도를 낮춰야 하고 특정 집단 낙인 우려. Reddit 인용 질적 분석이라 오브젝트화가 어렵다. 초록까지 확인"
+    },
+    {
+      "title": "When Chatbots Accommodate: Auditing the Response Policies of AI Companions in Vulnerable Conversations",
+      "url": "https://arxiv.org/abs/2606.04431",
+      "reject_reason": "EMNLP 2026 Findings. 인간 행동이 아니라 챗봇 응답 정책 감사라 일반인에게 이야기로 풀기 어렵다. 초록까지 확인"
+    },
+    {
+      "title": "Does My Chatbot Have an Agenda? Understanding Human and AI Agency in Human-Human-like Chatbot Interaction",
+      "url": "https://arxiv.org/abs/2601.22452",
+      "reject_reason": "CHI 2026. 22명 질적 연구로 결과가 분류 틀 중심이라 카드 6장에 놓을 반전이 약하다. 초록까지 확인"
+    },
+    {
+      "title": "Emotional Manipulation by AI Companions",
+      "url": "https://arxiv.org/abs/2508.19258",
+      "reject_reason": "2025년 프리프린트라 최근성 순위에서 밀린다. 정서·의존 주장이 걸려 있어 프리프린트 헤드라인 강도를 낮춰야 한다. 초록까지 확인"
+    },
+    {
+      "title": "A Longitudinal Randomized Control Study of Companion Chatbot Use: Anthropomorphism and Its Mediating Role on Social Impacts",
+      "url": "https://arxiv.org/abs/2509.19515",
+      "reject_reason": "2025년 프리프린트. 전체 사회적 건강 영향이 유의하지 않았고 핵심이 매개효과라 통계용어 없이 설명하기 어렵다. 초록까지 확인"
+    },
+    {
+      "title": "Sycophantic AI decreases prosocial intentions and promotes dependence (Science)",
+      "url": "https://www.science.org/doi/10.1126/science.aec8352",
+      "reject_reason": "서버가 접근을 막아(403) 원문을 열지 못했다. 접근 못 한 논문으로 카드를 만들지 않는다. 월요일 주제(신뢰·의존)에 더 가깝다. 검색 결과 요약만 확인"
+    },
+    {
+      "title": "Exploring the Effects of Chatbot Anthropomorphism and Human Empathy on Human Prosocial Behavior Toward Chatbots (PACM HCI)",
+      "url": "https://dl.acm.org/doi/10.1145/3757596",
+      "reject_reason": "서버가 접근을 막아(403) 원문을 열지 못했다. 검색 결과 요약만 확인"
+    },
+    {
+      "title": "Investigating Affective Use and Emotional Well-being on ChatGPT",
+      "url": "https://arxiv.org/abs/2504.03888",
+      "reject_reason": "2025년 4월 자료라 최근성 순위에서 밀린다. 검색 결과 요약만 확인"
+    }
+  ],
+  "object_name": "위로 쪽지",
+  "object_rationale": "참가자가 실제로 읽은 자극물이 위로 메시지 한 편이다. 쪽지 한 장을 글줄·체크칸·길이로 그리면 연구가 다룬 것(누가 썼는가, 무엇이 담겼는가, 얼마나 길었는가)을 직사각형과 선만으로 정확히 표현할 수 있다. 하나에서 둘, 셋 줄로 나뉘고, 기울고, 점선으로 흐려지고, 비어 열리며 6장을 관통한다. 과거 오브젝트(두 개의 점, 시간 막대)와 겹치지 않는다.",
+  "accent_color": "#2F5D8A",
+  "slides": [
+    {
+      "slide_number": 1,
+      "narrative_role": "등장",
+      "context_label": "속상한 날의 쪽지",
+      "hero_copy": [
+        "속상한 날 받은",
+        "위로 쪽지 한 장,",
+        "누가 썼을까"
+      ],
+      "hero_number": null,
+      "support_copy": "AI일 수도, 사람일 수도 있다.",
+      "footnote": [],
+      "object_state": "빈 쪽지 한 장이 처음 나타난다. 아직 아무 글도 없다.",
+      "layout": "top-object",
+      "object_height": 250,
+      "object_svg": "<rect x=\"338\" y=\"15\" width=\"220\" height=\"210\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/>",
+      "object_labels": []
+    },
+    {
+      "slide_number": 2,
+      "narrative_role": "작동",
+      "context_label": "연구가 살펴본 것",
+      "hero_copy": [
+        "AI 쪽지와 사람 쪽지를",
+        "서로 다른 참가자가",
+        "읽고 느낌을 매겼다"
+      ],
+      "hero_number": null,
+      "support_copy": "속상한 일을 상상한 뒤 받은 쪽지 하나를 평가했다.",
+      "footnote": [
+        "연구 1b에서는 출처를 알려주지 않았다.",
+        "AI 쪽지는 ChatGPT 4o 대표 메시지였다."
+      ],
+      "object_state": "사람 쪽지와 AI 쪽지가 점선 구분선을 사이에 두고 서로 다른 배정 칸으로 갈라진다. 각 칸은 다른 참가자 집단이다.",
+      "layout": "mid-object",
+      "object_height": 290,
+      "object_svg": "<rect x=\"118\" y=\"10\" width=\"200\" height=\"200\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"152\" y1=\"70\" x2=\"284\" y2=\"70\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"152\" y1=\"110\" x2=\"284\" y2=\"110\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"152\" y1=\"150\" x2=\"238\" y2=\"150\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"448\" y1=\"0\" x2=\"448\" y2=\"230\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/><rect x=\"578\" y=\"10\" width=\"200\" height=\"200\" rx=\"8\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"612\" y1=\"70\" x2=\"744\" y2=\"70\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"612\" y1=\"110\" x2=\"744\" y2=\"110\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"612\" y1=\"150\" x2=\"698\" y2=\"150\" stroke=\"MUTED\" stroke-width=\"4\"/>",
+      "object_labels": [
+        {
+          "x": 218,
+          "y": 262,
+          "text": "사람이 쓴 쪽지",
+          "color": "MUTED"
+        },
+        {
+          "x": 678,
+          "y": 262,
+          "text": "AI가 쓴 쪽지",
+          "color": "ACCENT"
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "narrative_role": "분할",
+      "context_label": "상황 셋으로 나눴다",
+      "hero_copy": [
+        "분노와 공포 앞에서는",
+        "AI 쪽지가 더",
+        "위로로 읽혔다"
+      ],
+      "hero_number": null,
+      "support_copy": "‘지지받는 느낌’ 평가가 그랬다. 슬픔에서는 차이를 확인하지 못했다.",
+      "footnote": [
+        "연구 1b(390명), 5점 척도. 상상한 상황 속 평가.",
+        "사람 쪽 쪽지는 참가자 서술 중 고른 대표 메시지."
+      ],
+      "object_state": "쪽지 한 쌍이 분노·슬픔·공포 세 줄로 나뉜다. AI 쪽지는 분노·공포 줄에서만 채워진다.",
+      "layout": "mid-object",
+      "object_height": 450,
+      "object_svg": "<rect x=\"320\" y=\"75\" width=\"160\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"348\" y1=\"106\" x2=\"452\" y2=\"106\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"348\" y1=\"136\" x2=\"420\" y2=\"136\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"580\" y=\"75\" width=\"160\" height=\"90\" rx=\"8\" fill=\"ACCENT\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"608\" y1=\"106\" x2=\"712\" y2=\"106\" stroke=\"BG\" stroke-width=\"4\"/><line x1=\"608\" y1=\"136\" x2=\"680\" y2=\"136\" stroke=\"BG\" stroke-width=\"4\"/><rect x=\"320\" y=\"205\" width=\"160\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"348\" y1=\"236\" x2=\"452\" y2=\"236\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"348\" y1=\"266\" x2=\"420\" y2=\"266\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"580\" y=\"205\" width=\"160\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"608\" y1=\"236\" x2=\"712\" y2=\"236\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"608\" y1=\"266\" x2=\"680\" y2=\"266\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"320\" y=\"335\" width=\"160\" height=\"90\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"348\" y1=\"366\" x2=\"452\" y2=\"366\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"348\" y1=\"396\" x2=\"420\" y2=\"396\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"580\" y=\"335\" width=\"160\" height=\"90\" rx=\"8\" fill=\"ACCENT\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"608\" y1=\"366\" x2=\"712\" y2=\"366\" stroke=\"BG\" stroke-width=\"4\"/><line x1=\"608\" y1=\"396\" x2=\"680\" y2=\"396\" stroke=\"BG\" stroke-width=\"4\"/>",
+      "object_labels": [
+        {
+          "x": 400,
+          "y": 30,
+          "text": "사람",
+          "color": "MUTED"
+        },
+        {
+          "x": 660,
+          "y": 30,
+          "text": "AI",
+          "color": "ACCENT"
+        },
+        {
+          "x": 0,
+          "y": 131,
+          "text": "분노",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 261,
+          "text": "슬픔",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 391,
+          "text": "공포",
+          "color": "MUTED",
+          "anchor": "start"
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "narrative_role": "결과",
+      "context_label": "이유를 찾아본 실험",
+      "hero_copy": [
+        "구체적인 방법이 담긴",
+        "쪽지가 더 위로로 느껴졌다"
+      ],
+      "hero_number": null,
+      "support_copy": "감정을 인정하는 말을 넣고 빼도 기분 변화는 뚜렷하지 않았다.",
+      "footnote": [
+        "연구 3b(180명, 57단어로 길이를 맞춤). 분노·슬픔 상황.",
+        "AI가 썼든 사람이 썼든 이 평가는 나타났다."
+      ],
+      "object_state": "방법이 담긴 쪽지가 체크칸을 얻고 살짝 기운다. 방법이 빠진 쪽지는 그대로다.",
+      "layout": "mid-object",
+      "object_height": 330,
+      "object_svg": "<rect x=\"148\" y=\"10\" width=\"210\" height=\"240\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"182\" y1=\"70\" x2=\"324\" y2=\"70\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"182\" y1=\"110\" x2=\"324\" y2=\"110\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"182\" y1=\"150\" x2=\"324\" y2=\"150\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"182\" y1=\"190\" x2=\"278\" y2=\"190\" stroke=\"MUTED\" stroke-width=\"4\"/><g transform=\"rotate(-4 643 130)\"><rect x=\"538\" y=\"10\" width=\"210\" height=\"240\" rx=\"8\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"7\"/><rect x=\"568\" y=\"52\" width=\"28\" height=\"28\" rx=\"4\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><polyline points=\"573,65 579,72 590,58\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><line x1=\"614\" y1=\"66\" x2=\"714\" y2=\"66\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"568\" y=\"114\" width=\"28\" height=\"28\" rx=\"4\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><polyline points=\"573,127 579,134 590,120\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><line x1=\"614\" y1=\"128\" x2=\"714\" y2=\"128\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"568\" y=\"176\" width=\"28\" height=\"28\" rx=\"4\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><polyline points=\"573,189 579,196 590,182\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><line x1=\"614\" y1=\"190\" x2=\"714\" y2=\"190\" stroke=\"MUTED\" stroke-width=\"4\"/></g>",
+      "object_labels": [
+        {
+          "x": 253,
+          "y": 305,
+          "text": "방법이 빠진 쪽지",
+          "color": "MUTED"
+        },
+        {
+          "x": 643,
+          "y": 305,
+          "text": "방법이 담긴 쪽지",
+          "color": "ACCENT"
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "narrative_role": "오해 방지",
+      "context_label": "자주 생기는 오해",
+      "hero_copy": [
+        "AI가 사람보다",
+        "위로를 잘한다는",
+        "뜻은 아니다"
+      ],
+      "hero_number": null,
+      "support_copy": "사람 쪽 쪽지는 평균 16단어 남짓한 짧은 서술이었다.",
+      "footnote": [
+        "사람 쪽 원재료는 참가자가 적은 서술(평균 16.3단어).",
+        "길이를 57단어로 맞춘 연구 3b의 지지감 평가는 출처 차이가 뚜렷하지 않았다."
+      ],
+      "object_state": "짧은 사람 쪽지 옆에 긴 AI 쪽지. AI 쪽지 아래쪽 글줄은 점선으로 흐려져, 길이를 맞추면 줄어드는 부분을 가리킨다.",
+      "layout": "mid-object",
+      "object_height": 350,
+      "object_svg": "<rect x=\"168\" y=\"10\" width=\"190\" height=\"130\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"7\"/><line x1=\"202\" y1=\"65\" x2=\"324\" y2=\"65\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"202\" y1=\"100\" x2=\"278\" y2=\"100\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"538\" y=\"10\" width=\"190\" height=\"250\" rx=\"8\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"572\" y1=\"60\" x2=\"694\" y2=\"60\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"572\" y1=\"96\" x2=\"694\" y2=\"96\" stroke=\"MUTED\" stroke-width=\"4\"/><line x1=\"572\" y1=\"132\" x2=\"694\" y2=\"132\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/><line x1=\"572\" y1=\"168\" x2=\"694\" y2=\"168\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/><line x1=\"572\" y1=\"204\" x2=\"648\" y2=\"204\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/>",
+      "object_labels": [
+        {
+          "x": 263,
+          "y": 315,
+          "text": "사람 쪽지 · 개념도",
+          "color": "MUTED"
+        },
+        {
+          "x": 633,
+          "y": 315,
+          "text": "AI 쪽지 · 개념도",
+          "color": "ACCENT"
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "narrative_role": "개방",
+      "context_label": "우리에게 남은 질문",
+      "hero_copy": [
+        "내가 건넨 위로에는",
+        "방법이 담겨 있었을까"
+      ],
+      "hero_number": null,
+      "support_copy": "사람의 위로에도 챗봇의 답장에도 남는 질문이다.",
+      "footnote": [
+        "이 질문은 연구 결과가 아니라 편집자의 것입니다."
+      ],
+      "object_state": "점선으로 열린 빈 쪽지. 체크칸은 모두 비어 있고 첫 칸만 강조색이다.",
+      "layout": "center-object",
+      "object_height": 290,
+      "object_svg": "<rect x=\"298\" y=\"10\" width=\"300\" height=\"250\" rx=\"8\" fill=\"none\" stroke=\"INK\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><rect x=\"348\" y=\"60\" width=\"30\" height=\"30\" rx=\"4\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\"/><rect x=\"348\" y=\"122\" width=\"30\" height=\"30\" rx=\"4\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"4\"/><rect x=\"348\" y=\"184\" width=\"30\" height=\"30\" rx=\"4\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"4\"/>",
+      "object_labels": []
+    }
+  ],
+  "caption": "위로 쪽지 두 장이 있다. 하나는 AI가, 하나는 사람이 썼다. 어느 쪽이 더 위로가 될까?\n\n영국 맨체스터대 연구진은 온라인 연구 다섯 건을 진행했다(참가자는 모두 합쳐 1,233명). 첫 연구의 참가자들은 위로 문구를 작성했고, 나머지 네 연구에서는 서로 다른 참가자에게 AI 또는 사람 쪽지를 배정했다. 이들은 속상한 상황을 상상한 뒤 배정된 쪽지 한 편을 읽고 기분과 ‘지지받는 느낌’을 평가했다. 연구 1b에서는 쪽지 출처를 알리지 않았다. AI 쪽지는 ChatGPT가 쓴 대표 메시지였다.\n\n분노와 공포 상황에서는 AI 쪽지가 더 지지받는 느낌을 줬다고 평가됐고, 슬픔 상황에서는 차이를 확인하지 못했다. 감정을 인정해 주는 표현을 넣고 빼는 것은 기분 변화에 뚜렷한 영향을 주지 않았다. 반면 구체적인 대처법이 담긴 쪽지는 AI가 썼든 사람이 썼든 더 위로가 된다고 평가됐다.\n\n주의할 점. 사람 쪽 쪽지는 참가자가 적은 짧은 서술에서 고른 것이라 ‘AI가 사람보다 위로를 잘한다’는 뜻이 아니다. 상상한 상황에서 쪽지 한 장을 읽은 직후의 평가이며, 실제 대화나 시간이 지난 뒤의 효과, 정서적 의존은 확인하지 않았다.\n\n출처: Chen, Walker & López-Pérez (2026), Emotion(동료평가 학술지 게재).",
+  "hashtags": [
+    "#HCI",
+    "#인간과AI",
+    "#챗봇",
+    "#AI위로",
+    "#감정",
+    "#UX리서치",
+    "#디지털행동",
+    "#인터랙션디자인",
+    "#연구노트",
+    "#AI심리"
+  ],
+  "alt_texts": [
+    "웜 오프화이트 배경 위에 비어 있는 쪽지 한 장의 윤곽. 큰 글씨로 '속상한 날 받은 위로 쪽지 한 장, 누가 썼을까'.",
+    "가운데 점선으로 갈라진 두 칸. 왼쪽 칸에는 검은 윤곽의 '사람이 쓴 쪽지', 오른쪽 칸에는 파란 윤곽의 'AI가 쓴 쪽지'가 있고 둘 다 글줄 세 개가 있다. 칸마다 다른 참가자 집단이다.",
+    "분노·슬픔·공포 세 줄에 각각 사람 쪽지와 AI 쪽지 한 쌍이 있다. 분노와 공포 줄에서는 AI 쪽지가 파랗게 채워져 있고, 슬픔 줄에서는 윤곽만 있다.",
+    "왼쪽은 글줄만 있는 '방법이 빠진 쪽지', 오른쪽은 체크칸 세 개와 글줄이 있고 살짝 기울어진 파란 '방법이 담긴 쪽지'.",
+    "짧은 사람 쪽지 옆에 긴 AI 쪽지. AI 쪽지의 아래쪽 글줄 세 개는 점선으로 흐려져 있다. 둘 다 '개념도'라고 표시돼 있다.",
+    "점선 윤곽의 빈 쪽지에 체크칸 세 개가 모두 비어 있고, 맨 위 칸만 파란색이다."
+  ],
+  "verification_items": [
+    "출처: Chen, Walker & López-Pérez, Emotion 2026 (DOI 10.1037/emo0001712). 게재 확인은 Manchester 대학 보도자료와 PubMed 서지. 본문은 OSF 프리프린트 v5(2nd Revision 원고) 전문으로 대조했다. 최종 출판본과 세부 수치가 다를 수 있다",
+    "연구 1b 390명, 분노 AI 3.23 vs 사람 2.47, 공포 3.76 vs 3.32, 슬픔 3.22 vs 3.08(유의하지 않음). 카드에는 방향만 쓰고 평균값은 올리지 않았다",
+    "연구 2(196명): 감정 인정 표현은 감정 변화에 유의한 영향이 없었다. 단, 분노 시나리오에서는 '지지받는 느낌' 평정에는 영향이 있었다. 카드 4장은 '기분 변화'로 한정했다",
+    "연구 3b(180명, 57단어): 대처법 있는 메시지가 분노·슬픔 모두 더 위로가 된다고 평정. 출처 주효과·상호작용은 유의하지 않았다. 카드는 '뚜렷하지 않았다'로 표현",
+    "사람 쪽 대표 메시지의 원재료는 평균 16.3단어의 짧은 서술. 연구 3a에서는 AI 메시지를 사후에 잘라 단어 수를 맞췄으나 정확히 맞추지는 못했다. 5장 그림은 개념도",
+    "연구 3a의 '대처법 있는 메시지가 AI가 쓴 것처럼 판단됨'은 3b에서 유의하지 않아(p = .065) 카드에 쓰지 않았다",
+    "1,233명은 연구 1a(279명, 사람이 위로 글을 쓴 단계)를 포함한 5개 연구 합계다. 카드에는 쓰지 않고 캡션에만 '모두 합쳐'로 표기하고, 1a는 글쓰기 단계임을 명시",
+    "메시지 출처(AI/사람)는 참가자 간 요인이다. 같은 참가자가 두 쪽지를 나란히 읽은 설계가 아니다. 2장 hero·그림·캡션에 반영 (GPT attempt 1 지적)"
+  ],
+  "human_check_items": [
+    "최종 출판본(Emotion, DOI 10.1037/emo0001712)을 열어 연구 1b·2·3b의 표본 수와 결과 방향이 원고와 같은지",
+    "1장 '누가 썼을까' 훅이 연구가 다룬 범위(작성자를 알려주지 않음)를 넘지 않는지",
+    "3장에서 AI 쪽지를 파랗게 채운 것이 '우월'로 읽히지 않는지, 5장이 그 오해를 충분히 막는지",
+    "4장 '기울어진 쪽지'가 방법의 효과를 과장하지 않는지",
+    "6장 질문이 연구 결과로 읽히지 않는지(footnote에 편집자의 것이라고 표기)",
+    "해시태그가 계정 톤과 맞는지"
+  ],
+  "status": "awaiting_human_review"
+}

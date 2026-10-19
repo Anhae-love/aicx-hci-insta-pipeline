@@ -1,0 +1,332 @@
+{
+  "date": "2026-09-21",
+  "weekday_category": "월 — 인간과 AI의 협업, 신뢰, 의존, 판단",
+  "content_title": "AI와 함께하면 빨라질 거라는 기대",
+  "source_title": "Cognitive offloading and the speedup illusion in human-AI interaction",
+  "source_url": "https://arxiv.org/abs/2605.23177",
+  "source_access_status": "원문 확인",
+  "is_preprint": false,
+  "selection_sentence": "이 연구는 'AI와 함께하면 얼마나 빨라질까'라는 사람들의 예상과 실제로 걸린 시간을 살펴봤고, 예상만큼 빨라지지 않는 경향과 덜 힘들다는 응답이 함께 나타났다. 하지만 5분이 넘는 복잡한 과제에서도 그런지까지 확인한 것은 아니다.",
+  "candidates": [
+    {
+      "title": "Cognitive offloading and the speedup illusion in human-AI interaction (선정)",
+      "url": "https://arxiv.org/abs/2605.23177",
+      "reject_reason": "선정"
+    },
+    {
+      "title": "Do People Follow AI Advice? Evidence from a Pension Portfolio Choice Experiment",
+      "url": "https://arxiv.org/abs/2608.11371",
+      "reject_reason": "2순위. 프리프린트+금융 조언이라 헤드라인 강도를 낮춰야 하고, 핵심 수치(37% 전달률)가 통계모형 추정치라 일반인 설명에 통계용어가 필요하다."
+    },
+    {
+      "title": "AI Persuasion and Financial-Decision Making: Experimental Evidence on Dominated Investment Choices (CESifo WP 12925)",
+      "url": "https://www.ifo.de/DocDL/cesifo1_wp12925.pdf",
+      "reject_reason": "워킹페이퍼(동료평가 전)이고, 원문 PDF는 열지 못하고 보도 기사로만 확인했다. 4개 조건 비교라 6장에 한계를 담기 어렵다."
+    },
+    {
+      "title": "Behavioral Indicators of Overreliance During Interaction with Conversational Language Models (CHI 2026)",
+      "url": "https://arxiv.org/abs/2602.11567",
+      "reject_reason": "5개 행동 군집을 상호작용 로그에서 분류한 관찰 연구(77명). 결과가 군집 이름 중심이라 단일 오브젝트로 시각화하기 어렵다."
+    },
+    {
+      "title": "Bias in the Loop: How Humans Evaluate AI-Generated Suggestions",
+      "url": "https://arxiv.org/abs/2509.08514",
+      "reject_reason": "2025-09 게재로 최근 12개월을 벗어났고, 주석 과제라는 특수 맥락이며 프리프린트다."
+    },
+    {
+      "title": "Revealing AI Reasoning Increases Trust but Crowds Out Unique Human Knowledge",
+      "url": "https://arxiv.org/abs/2511.04050",
+      "reject_reason": "프리프린트이고 '고유한 인간 지식' 개념 설명이 필요해 일반인 우선 원칙에 어긋난다."
+    },
+    {
+      "title": "Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender (Shaw & Nave)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646",
+      "reject_reason": "SSRN 원문이 HTTP 403으로 열리지 않아 2차 자료로만 확인했다. 원문 미접근이라 제외. 프리프린트이며 '항복'이라는 프레임이 결과보다 강한 편집적 해석에 가깝다."
+    },
+    {
+      "title": "Modeling AI Overreliance as a Complex Adaptive System",
+      "url": "https://arxiv.org/abs/2608.19616",
+      "reject_reason": "사람 참가자 실험이 아니라 시뮬레이션 모형이다(검색 요약만 확인)."
+    },
+    {
+      "title": "Offloading Score: Measuring AI Reliance Through Counterfactual Workflows",
+      "url": "https://arxiv.org/pdf/2605.29392",
+      "reject_reason": "측정 방법론 논문이라 인간 행동의 이야기로 풀기 어렵다(검색 요약만 확인)."
+    },
+    {
+      "title": "Trusting Generative AI for Health Advice: Preregistered Survey Experiment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13286080/",
+      "reject_reason": "건강 조언 맥락이라 독자가 의료 판단으로 오해할 위험이 있고, 결과가 자기보고 신뢰도 평가 중심이다(검색 요약만 확인)."
+    }
+  ],
+  "object_name": "시간 막대",
+  "object_rationale": "연구가 측정한 핵심은 '예상한 시간'과 '실제 걸린 시간'의 길이 차이와 '힘든 정도'다. 가로 막대 하나의 길이가 곧 걸린 시간이므로, 예상과 실제의 어긋남을 막대 길이의 비교만으로 정확히 그릴 수 있다. 조건 분할, 예상의 지워짐, 열린 질문까지 막대 하나로 6장을 관통한다.",
+  "accent_color": "#B5462A",
+  "slides": [
+    {
+      "slide_number": 1,
+      "narrative_role": "등장",
+      "context_label": "과제를 시작하기 전",
+      "hero_copy": [
+        "AI한테 시키면",
+        "금방 끝나겠지"
+      ],
+      "support_copy": "누구나 한 번쯤 해본 생각.",
+      "footnote": [],
+      "object_state": "막대 하나. 내가 혼자 그 일을 푸는 데 걸리는 시간이다. 중립적으로 놓여 있다.",
+      "layout": "top-object",
+      "object_height": 190,
+      "object_svg": "<rect x=\"0\" y=\"64\" width=\"700\" height=\"44\" fill=\"INK\"/>",
+      "object_labels": [
+        {
+          "x": 0,
+          "y": 40,
+          "text": "혼자 푸는 시간",
+          "color": "MUTED",
+          "anchor": "start"
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "narrative_role": "작동",
+      "context_label": "연구가 물은 것",
+      "hero_copy": [
+        "AI와 함께 풀면",
+        "얼마나 빨라질까?"
+      ],
+      "support_copy": "401명은 AI 또는 사람 도움 조건에 나뉘어 시간을 예상했다.",
+      "footnote": [
+        "과제는 5분 안에 끝나는 24가지(요약, 글 다듬기 등).",
+        "AI는 과제 화면 안의 GPT-4o 채팅창이었다."
+      ],
+      "object_state": "실선 막대 아래에 점선 막대가 나타난다. 'AI와 함께라면 이 정도?' 하는 예상이다.",
+      "layout": "mid-object",
+      "object_height": 270,
+      "object_svg": "<rect x=\"0\" y=\"52\" width=\"700\" height=\"44\" fill=\"INK\"/><rect x=\"3\" y=\"193\" width=\"514\" height=\"38\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        {
+          "x": 0,
+          "y": 34,
+          "text": "혼자 푸는 시간",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 170,
+          "text": "AI와 함께라면?",
+          "color": "ACCENT",
+          "anchor": "start"
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "narrative_role": "분할",
+      "context_label": "실제로 재보니",
+      "hero_copy": [
+        "전체 과제를 합치면",
+        "두 조건의 시간 차이는",
+        "뚜렷하지 않았다"
+      ],
+      "support_copy": "어려운 과제만 26초 빨랐고 쉬운 과제는 차이가 뚜렷하지 않았다.",
+      "footnote": [
+        "836명을 무작위로 나눠 실제 풀이 시간을 쟀다.",
+        "막대 끝 점선은 전체 차이가 뚜렷하지 않다는 개념도다."
+      ],
+      "object_state": "두 조건의 실제 시간 막대 끝을 점선으로 처리하고, 가운데에 '전체 차이 뚜렷하지 않음'을 표시한다.",
+      "layout": "mid-object",
+      "object_height": 270,
+      "object_svg": "<rect x=\"0\" y=\"52\" width=\"620\" height=\"44\" fill=\"INK\"/><rect x=\"620\" y=\"52\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"INK\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/><rect x=\"0\" y=\"190\" width=\"620\" height=\"44\" fill=\"ACCENT\"/><rect x=\"620\" y=\"190\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        {
+          "x": 0,
+          "y": 34,
+          "text": "혼자 푼 사람들",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 170,
+          "text": "AI와 푼 사람들",
+          "color": "ACCENT",
+          "anchor": "start"
+        },
+        {
+          "x": 700,
+          "y": 146,
+          "text": "전체 차이 뚜렷하지 않음",
+          "color": "MUTED",
+          "anchor": "end"
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "narrative_role": "결과",
+      "context_label": "기대와 현실",
+      "hero_copy": [
+        "기대는 1분 넘게 빨라짐",
+        "실제는 차이가 뚜렷하지 않음"
+      ],
+      "support_copy": "예상은 평균 68.5초 단축. 실제 전체 시간은 차이가 뚜렷하지 않았다.",
+      "footnote": [
+        "예상은 401명의 답, 실제는 836명이 잰 시간이다.",
+        "막대 길이는 개념도이며 실제 비율이 아니다."
+      ],
+      "object_state": "점선 '예상' 막대가 실선 막대보다 짧다. 실제 두 막대는 끝이 점선으로 열려 있어 전체 차이가 뚜렷하지 않음을 나타낸다.",
+      "layout": "mid-object",
+      "object_height": 400,
+      "object_svg": "<rect x=\"0\" y=\"52\" width=\"620\" height=\"44\" fill=\"INK\"/><rect x=\"620\" y=\"52\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"INK\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/><rect x=\"3\" y=\"193\" width=\"514\" height=\"38\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><line x1=\"524\" y1=\"212\" x2=\"700\" y2=\"212\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/><rect x=\"0\" y=\"328\" width=\"620\" height=\"44\" fill=\"ACCENT\"/><rect x=\"620\" y=\"328\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        {
+          "x": 0,
+          "y": 34,
+          "text": "혼자 푸는 시간(실제)",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 170,
+          "text": "AI와 함께(예상)",
+          "color": "ACCENT",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 312,
+          "text": "AI와 함께(실제)",
+          "color": "ACCENT",
+          "anchor": "start"
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "narrative_role": "오해 방지",
+      "context_label": "자주 하는 오해",
+      "hero_copy": [
+        "AI가 쓸모없다는",
+        "뜻은 아니다"
+      ],
+      "support_copy": "전체 시간 차이는 뚜렷하지 않아도 힘든 정도는 0.61점 낮았다.",
+      "footnote": [
+        "힘든 정도는 참가자가 직접 답한 점수(7점 척도).",
+        "5분 안에 끝나는 과제 기준. 화살표는 방향만 나타낸다."
+      ],
+      "object_state": "실제 두 막대는 끝이 점선으로 열려 있다. 오른쪽 '힘든 정도' 원은 크기가 같고, 사이의 화살표가 낮아진 방향만 가리킨다.",
+      "layout": "mid-object",
+      "object_height": 400,
+      "object_svg": "<rect x=\"0\" y=\"52\" width=\"620\" height=\"44\" fill=\"INK\"/><rect x=\"620\" y=\"52\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"INK\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/><circle cx=\"800\" cy=\"74\" r=\"28\" fill=\"INK\"/><rect x=\"0\" y=\"190\" width=\"620\" height=\"44\" fill=\"ACCENT\"/><rect x=\"620\" y=\"190\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/><circle cx=\"800\" cy=\"212\" r=\"28\" fill=\"ACCENT\"/><line x1=\"800\" y1=\"112\" x2=\"800\" y2=\"168\" stroke=\"MUTED\" stroke-width=\"4\" marker-end=\"url(#ar-muted)\"/>",
+      "object_labels": [
+        {
+          "x": 0,
+          "y": 34,
+          "text": "혼자",
+          "color": "MUTED",
+          "anchor": "start"
+        },
+        {
+          "x": 0,
+          "y": 170,
+          "text": "AI와 함께",
+          "color": "ACCENT",
+          "anchor": "start"
+        },
+        {
+          "x": 800,
+          "y": 26,
+          "text": "힘든 정도",
+          "color": "MUTED",
+          "anchor": "middle"
+        },
+        {
+          "x": 752,
+          "y": 148,
+          "text": "0.61점 낮음",
+          "color": "MUTED",
+          "anchor": "end"
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "narrative_role": "개방",
+      "context_label": "남은 질문",
+      "hero_copy": [
+        "시간 차이가 뚜렷하지 않아도,",
+        "덜 힘들다면 이득일까?"
+      ],
+      "support_copy": "연구팀은 걸린 시간만으로는 효율을 다 설명할 수 없다고 말한다.",
+      "footnote": [
+        "카드의 질문은 편집자의 것이며, 연구가 답한 것이 아니다."
+      ],
+      "object_state": "끝이 점선으로 열린 막대 아래로 화살표가 내려가 속이 빈 점선 원에서 열린 채 끝난다.",
+      "layout": "center-object",
+      "object_height": 340,
+      "object_svg": "<rect x=\"98\" y=\"64\" width=\"620\" height=\"44\" fill=\"INK\"/><rect x=\"718\" y=\"64\" width=\"80\" height=\"44\" fill=\"none\" stroke=\"INK\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/><line x1=\"448\" y1=\"122\" x2=\"448\" y2=\"172\" stroke=\"MUTED\" stroke-width=\"4\" marker-end=\"url(#ar-muted)\"/><circle cx=\"448\" cy=\"232\" r=\"40\" fill=\"none\" stroke=\"ACCENT\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        {
+          "x": 448,
+          "y": 42,
+          "text": "전체 차이 뚜렷하지 않음",
+          "color": "MUTED",
+          "anchor": "middle"
+        },
+        {
+          "x": 448,
+          "y": 316,
+          "text": "다른 무엇?",
+          "color": "ACCENT",
+          "anchor": "middle"
+        }
+      ]
+    }
+  ],
+  "caption": "AI한테 시키면 금방 끝날 것 같다. 그 기대는 얼마나 맞을까?\n\n연구팀은 401명의 예상 표본과 836명의 실제 수행 표본을 비교했다. 일부 참가자는 두 표본에 겹쳤다. 예상 표본은 AI 도움 또는 다른 사람 도움 조건으로 나뉘어, 혼자 할 때와 도움을 받을 때의 시간을 예상했다. 실제 수행 표본은 요약, 글 다듬기 같은 5분 안에 끝나는 과제 24가지를 혼자, 또는 GPT-4o 채팅창과 함께 풀었다.\n\n사람들은 AI와 함께하면 평균 68.5초 빨라질 거라 예상했다. 다른 사람의 도움을 상상했을 때는 17초였다. 실제로 잰 전체 시간은 두 조건의 차이가 뚜렷하지 않았다. 쉬운 과제에서는 차이가 뚜렷하지 않았고, 어려운 과제에서는 AI 조건이 26.14초 빨랐다. 24개 중 AI가 시간을 유의하게 줄인 과제는 3개였다. 반면 힘들다는 느낌은 AI와 함께한 쪽이 평균 0.61점(7점 척도) 낮았다.\n\n주의할 점. 예상 표본과 실제 수행 표본은 일부만 겹친다. 5분 안에 끝나는 단순한 과제, 온라인 참가자, GPT-4o 기준이라 복잡한 업무나 다른 AI에는 그대로 적용할 수 없다. AI가 쓸모없다는 뜻도 아니다.\n\n당신이 AI를 켤 때 아끼려는 건 시간일까, 힘일까?",
+  "hashtags": [
+    "#HCI",
+    "#인간과AI",
+    "#AI활용",
+    "#생산성",
+    "#UX리서치",
+    "#디지털행동",
+    "#인지과학",
+    "#CogSci2026",
+    "#AI시대의일",
+    "#연구노트"
+  ],
+  "alt_texts": [
+    "웜 오프화이트 배경 위 검은 가로 막대 하나와 '혼자 푸는 시간' 라벨. 큰 글씨로 'AI한테 시키면 금방 끝나겠지'.",
+    "검은 실선 막대 아래에 더 짧은 주황색 점선 막대가 놓여 있다. 각각 '혼자 푸는 시간', 'AI와 함께라면?' 라벨.",
+    "두 개의 가로 막대가 위아래로 놓여 있고 둘 다 끝 부분이 점선으로 열려 있다. '전체 차이 뚜렷하지 않음' 표시.",
+    "검은 막대(실제), 더 짧은 주황 점선 막대(예상), 검은 막대와 같은 길이의 주황 막대(실제)가 세로로 놓여 있고 예상 막대 끝과 실제 막대 끝 사이를 점선이 잇는다.",
+    "실제 시간 막대 두 개는 끝이 점선으로 열려 있고, 오른쪽에 같은 크기의 원 두 개와 그 사이를 잇는 아래 방향 화살표, '0.61점 낮음' 표시.",
+    "끝이 점선으로 열린 막대 아래로 화살표가 내려가 속이 빈 점선 원에 닿는다."
+  ],
+  "verification_items": [
+    "표본: 총 1,237명 = 예상 조사 401명 + 실제 풀이 836명 (원문: 'N=1237 in total: 401 in the prediction sample and 836 in the completion sample'). 두 표본은 완전히 분리되지 않아 일부 참가자가 겹친다(원문 한계 절).",
+    "예상: 'People expect AI assistance to reduce task completion times by 68.5 seconds (β=68.5, SE=3.37, z=20.34, p<0.001)'. 다른 사람 도움은 17.10초(β=17.10)로 예상.",
+    "실제: 'AI assistance only made difficult tasks faster, and not easy ones: ... faster by 26.14 seconds (SE=11.9, z=2.19, p<0.05) on difficult tasks, but no difference ... for easy tasks.' 24개 중 유의하게 빨라진 과제는 3개(원문 명시). 초록은 전체적으로 'did not differ'라고 요약.",
+    "예상 시간과 실제 AI 조력 시간의 차이는 'almost one minute greater than the predicted time (β=57.8)'. 혼자 풀 때는 예상과 실제가 다르지 않았다(β=-2.52, p=.775).",
+    "노력: 'NASA-TLX average lowered by 0.61 points on a 7-point scale (p<0.001)'. 자기보고 척도이며, 노력이 줄어든 과제는 24개 중 15개('AI assistance leads to offloading for 15 of the tasks'). 카드는 '평균'으로만 표기.",
+    "AI는 과제 화면 안 GPT-4o 채팅창. 과제는 5분 이내 24가지(예: 'enjoy'의 유의어 10개, 긴 글 요약, 긴 글 편집). 참가자는 Prolific 온라인 참가자.",
+    "예상 표본과 실제 표본은 between-subjects 집계 비교이며, 같은 사람이 예상 후 실제로 풀어본 것이 아니다. 카드 4장 각주와 캡션에 명시.",
+    "6장의 질문은 편집자의 것. 초록의 근거 문장: 'completion time itself is not sufficient to characterize efficiency gains.'",
+    "GPT 교차검증 attempt 1 반영: 전체 시간은 '같았다'가 아니라 '차이가 뚜렷하지 않았다'. 어려운 과제는 26.14초 단축. 401명 예상 표본은 AI/사람 도움 조건으로 배정됐고 836명 실제 표본과 일부 겹친다.",
+    "facts.json 게이트가 4장 support 의 \"혼자 풀 때와 다르지 않았다\" 를 추가로 잡았다. GPT 교차검증이 3·5·6장은 지적했지만 이 문장은 놓쳤다."
+  ],
+  "human_check_items": [
+    "원문 링크(https://arxiv.org/abs/2605.23177)가 실제로 열리는지",
+    "이 논문이 CogSci 2026 프로시딩에 실제로 실렸는지. arXiv 'Comments'에 '48th Annual Meeting of the Cognitive Science Society'라고 적혀 있어 프리프린트 고지를 뺐지만, 학회 사이트에서 게재를 확인하지 못했다. 확인이 안 되면 캡션에 '아직 동료평가를 거치지 않은 프리프린트입니다' 추가",
+    "3장 '걸린 시간은 같았다'가 어려운 과제의 26초 단축을 지나치게 가리지 않는지(support에서 바로 밝힘)",
+    "4장 막대 길이가 개념도라는 각주가 카드에서 읽히는지",
+    "5장 '힘든 정도' 원 크기 차이가 0.61점(7점 척도)보다 과장돼 보이지 않는지",
+    "해시태그가 계정 톤과 맞는지",
+    "5장 '0.61점 낮음' 라벨 위치 — GPT가 제안한 x=850 은 슬롯 폭 896 을 넘어가서 화살표 왼쪽(x=752, anchor=end)으로 옮겼다. 렌더 결과에서 겹침 확인할 것."
+  ],
+  "status": "awaiting_human_review"
+}

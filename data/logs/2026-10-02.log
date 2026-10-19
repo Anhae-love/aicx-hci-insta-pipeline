@@ -1,0 +1,39 @@
+﻿[03:53:40] INFO  ─────────────────────────────────────────────
+[03:53:40] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[03:53:40] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:53:40] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.284\claude.exe
+[03:53:40] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\12219cbfbcbddde7\codex.exe
+[03:53:40] INFO  인증: 저장된 자격증명 파일
+[03:53:40] INFO  claude 헤드리스 세션 시작 …
+[04:13:25] INFO  claude 종료  exit=0  19.8분
+[04:13:26] INFO  ── 출력 끝부분 ──
+Today's (Fri 10/02) card set is done and waiting for your review (`awaiting_human_review`). GPT cross-check passed on attempt 2, and all 6 slides are rendered. Nothing was posted to Instagram.
+
+**Folder:** `output/20261002_물_마셨을_뿐인데_강의가_처음으로/`
+
+- **Topic:** an online-course platform watches learners through the webcam and microphone. If something looks wrong for about 2 seconds, or another face shows up, the video jumps back to the start of the segment.
+  - The surveys never mentioned monitoring, yet 18 of 51 learners brought it up on their own.
+  - They complained about ordinary actions like drinking water being read as distraction, and about having to rewatch what they'd already seen.
+  - None of the 18 objected to being watched in principle. That "0명" is the big number on slide 4.
+- **Source:** arXiv 2609.39023 (submitted 2026-09-30). I couldn't find a journal or conference, so it's labelled a preprint.
+- **Object and color:** a play triangle on a screen, with accent `#2F8F5B`. Neither repeats a recent post.
+
+**What the GPT check changed:** on attempt 1 it raised 3 issues, none blocking, and all were correct, so I applied them.
+- The biggest one: of the 4 dropouts who named monitoring as their main reason for leaving, only 2 were about the camera misreading them. The other 2 were about score cutoffs and playback limits, because the study's "monitoring" covers those rules too.
+- The study also compared dropouts with learners who stayed. What it lacked was a group without monitoring and a before-monitoring baseline. Slide 5 and the caption now say this correctly.
+
+**Fixes after rendering:** I moved the rewind arrow on slide 3 off the screen frame and adjusted line breaks on slides 4–5. The wording is unchanged, so I didn't re-verify.
+
+**Please check before posting:**
+1. **Whether to feature this paper at all.** The authors built the platform they studied, and the study did not go through an ethics board. Both are disclosed in the caption.
+2. **Slide 4.** Make sure "0명" doesn't read as "everyone supported being watched." The footnote says it only means no one objected in answers that never asked their opinion.
+3. **Slide 1.** The water scene comes from one learner's answer, and the footnote says so.
+4. **The sample.** It's Indian students in one internship course. Make sure the post doesn't come across as a statement about students from one country.
+
+NOTES.md has the full candidate list (13 reviewed; runner-up was the teen social-media privacy settings paper) and the GPT fix history. This run is also recorded in `state/index.jsonl`.
+
+Sources:
+- [arXiv 2609.39023 (abs)](https://arxiv.org/abs/2609.39023)
+- [arXiv 2609.39023 (HTML)](https://arxiv.org/html/2609.39023)
+[04:13:26] INFO  결과: 20261002_물_마셨을_뿐인데_강의가_처음으로  status=awaiting_human_review  PNG=6장
+[04:13:26] INFO  파이프라인 종료

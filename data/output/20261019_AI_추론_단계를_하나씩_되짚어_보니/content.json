@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-19",
+  "weekday_category": "월 — 인간과 AI의 협업, 신뢰, 의존, 판단",
+  "content_title": "AI가 알아서 했다고 본 단계들",
+  "source_title": "What Did the AI Take On? Characterizing Cognitive Delegation in LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.06328",
+  "source_access_status": "원문 확인",
+  "is_preprint": true,
+  "selection_sentence": "이 연구는 사람들이 AI와 과제를 한 뒤 AI의 추론 단계를 하나씩 되짚으며 '내가 시킨 것'과 'AI가 알아서 한 것'을 가른 판단을 살펴봤고, 참여자가 단계의 절반 가까이를 'AI가 알아서 했다'고 보며 그 비율이 답변 뒤쪽으로 갈수록 높아지는 경향을 발견했다. 하지만 AI가 실제로 지시를 벗어났는지, 그것이 결과물을 나쁘게 만들었는지, 사람들이 AI에 더 의존하게 됐는지까지 확인한 것은 아니다.",
+  "candidates": [
+    {
+      "title": "What Did the AI Take On? Characterizing Cognitive Delegation in LLM Reasoning",
+      "url": "https://arxiv.org/abs/2610.06328",
+      "reject_reason": "선정. 'AI에게 하나를 시켰는데 AI는 무엇을 더 했나'라는, AI를 쓰는 누구나 겪는 장면을 단계 단위로 직접 잰 연구다. 핵심 결과가 통계 모형 없이 '참여자가 단계의 48.6%를 AI가 알아서 했다고 봤다'는 비율로 설명되고, 추론 단계를 '계단' 하나로 시각화할 수 있다. 월요일 주제(AI 협업·위임·판단)에 맞다. 2026-10-05 공개 프리프린트(KAIST). 원문 HTML 전체 확인."
+    },
+    {
+      "title": "Impact of Expertise and Trust on AI-assisted Work",
+      "url": "https://arxiv.org/abs/2610.14660",
+      "reject_reason": "2순위. 실제 기업 채용 과제를 AI 에이전트와 푼 전문가 20명의 소리 내어 생각하기 연구로, '많이 맡긴 사람일수록 더 많이 끝냈지만 틀린 답도 더 많았다'는 결과가 강하다. 그러나 20명 질적 연구라 '많이 맡기면 틀린다'는 인과로 읽히기 쉽고, 전문성 집단 비교가 훅이 되기 쉽다. 초록만 확인."
+    },
+    {
+      "title": "Human-AI Conversational Behaviors Predict Unassisted Task Performance",
+      "url": "https://arxiv.org/abs/2610.09547",
+      "reject_reason": "'정답부터 달라고 한 사람은 나중에 혼자 할 때 못했다'는 흥미로운 결과지만 상관 연구라 카드에서 '정답을 달라고 하면 실력이 준다'는 인과로 번지기 쉽고, 대화 행위 분류 체계 설명이 필요하다. 초록만 확인."
+    },
+    {
+      "title": "Following Delegation Traces to Study Human Oversight in Interaction with Multimodal AI",
+      "url": "https://arxiv.org/abs/2610.21948",
+      "reject_reason": "신뢰와 '맡기겠다'는 선택의 관계를 다루지만 핵심 수치가 오즈비(OR=14.97)라 통계 용어 없이 설명하기 어렵고, '맡기겠다'는 실제 행동이 아닌 의도다. 초록만 확인."
+    },
+    {
+      "title": "Confident, Not Wiser: The Dunning-Kruger Effect in Human-AI Interaction",
+      "url": "https://arxiv.org/abs/2609.31095",
+      "reject_reason": "AI와 함께 풀면 점수는 오르지만 자기 평가는 따라가지 못한다는 주제가 좋지만, 핵심 집단 차이가 저자 스스로 '결론 내리기 어렵다(inconclusive)'고 한 부분이고 더닝-크루거 설명이 필요하다. 09-21 '빨라질 거라는 기대'와도 각도가 겹친다. 초록만 확인."
+    },
+    {
+      "title": "Think Once, Reflect Twice: How Feedback Shapes Human-AI Collaboration",
+      "url": "https://arxiv.org/abs/2610.19991",
+      "reject_reason": "AI 조언을 뒤집은 결정에 피드백을 주는 실험(N=244). 결과가 '반대 방향의 의존 변화가 상쇄돼 팀 성과는 변하지 않았다'는 복합 효과라 카드 6장으로 정확히 옮기기 어렵다. 초록만 확인."
+    },
+    {
+      "title": "Novice Reliance Calibration in AI-Assisted Decision Making: The Role of Explanations and Self-Assessment",
+      "url": "https://arxiv.org/abs/2610.07800",
+      "reject_reason": "설명을 보여주면 초보자가 과의존 쪽으로 기운다는 결과지만 임상 개체 추출이라는 낯선 과제이고, 10-05 'AI 제안마다 이유 쓰기'와 주제가 가깝다. 초록만 확인."
+    },
+    {
+      "title": "AI-Assisted Submissions in Online Research Are Rare and Highly Concentrated but Routinely Approved",
+      "url": "https://arxiv.org/abs/2610.09279",
+      "reject_reason": "온라인 설문 응답자의 ChatGPT 기록을 직접 연결한 강한 데이터(제출 71만 건 중 AI 도움 1%)지만, 연구 플랫폼 운영 문제라 일반인의 일상 연결성이 약하고 '부정행위' 프레임으로 읽히기 쉽다. 초록만 확인."
+    },
+    {
+      "title": "Structured pre-generation elicitation versus single-shot prompting in AI-assisted enterprise decision-making: a randomised online experiment",
+      "url": "https://arxiv.org/abs/2610.09593",
+      "reject_reason": "생성 전에 질문을 거치게 하면 문서 품질이 32% 높아졌다는 무작위 실험이지만, 단독 저자의 자사 프로토타입 평가라 근거 신뢰성 평가가 필요하고 기업 전략 문서라는 과제가 일반인에게 멀다. 초록만 확인."
+    },
+    {
+      "title": "\"Do You Trust It... or Check It?\": Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration",
+      "url": "https://arxiv.org/abs/2610.21233",
+      "reject_reason": "아이들이 AI 제안을 확인하는 행동이라는 좋은 장면이지만 예비 평가(Late Breaking Work)라 셀 수 있는 결과가 적고, 아동 관련 주장이라 헤드라인 강도를 낮춰야 한다. 초록만 확인."
+    },
+    {
+      "title": "When My Skill Becomes Agent Skill: How Knowledge Workers Share Their Expertise with AI Systems",
+      "url": "https://arxiv.org/abs/2610.09608",
+      "reject_reason": "내 노하우를 사람과 AI 중 누구에게 쓰게 할지 고르는 실험으로 흥미롭지만, 초록에 수치가 없고 결과가 '공유 여부에서 차이'라는 수준이라 원문 상세 검토 없이 카드를 설계하기 어렵다. 초록만 확인."
+    }
+  ],
+  "object_name": "다섯 칸 계단",
+  "object_rationale": "연구가 쪼개 본 단위가 AI 답변 하나를 이루는 '추론 단계'이고, 위치 분석도 한 답변의 추론을 다섯 구간으로 나눠 봤다. 그래서 부탁(아래)에서 답(위)으로 오르는 다섯 칸 계단으로 그린다. 사각형 블록과 원 하나로 그릴 수 있다. 계단이 놓이고(등장), 한 칸에 '누가 시작했나' 질문이 꽂히고(작동), 계단이 같은 높이의 다섯 칸으로 펴져 첫 칸과 마지막 칸에 'AI가 알아서'의 몫이 채워지고(분할), 숫자 장을 지나, 'AI가 알아서 한 칸'을 크게 확대해 원치 않았던 부분만 점선으로 지우고(오해 방지), 마지막에 한 칸이 비어 열린 계단 위에 원 하나가 떠 있다(개방). 족쇄·경고·붕괴 같은 은유는 쓰지 않는다 — 의존이나 해로움은 재지 않았다.",
+  "accent_color": "#C4581A",
+  "slides": [
+    {
+      "slide_number": 1,
+      "narrative_role": "등장",
+      "context_label": "AI에게 일을 맡길 때",
+      "hero_copy": [
+        "AI에게 하나를 시켰는데",
+        "몇 가지를 했을까"
+      ],
+      "hero_number": null,
+      "support_copy": "답이 나오기까지 AI는 여러 추론 단계를 거친다.",
+      "footnote": [],
+      "object_state": "아래 '부탁'에서 위 '답'으로 오르는 다섯 칸 계단. 속이 빈 블록들이고, 맨 위 칸에 검은 원(답)이 놓여 있다. 중립적이다.",
+      "layout": "top-object",
+      "object_height": 340,
+      "object_svg": "<rect x=\"168\" y=\"242\" width=\"112\" height=\"48\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"280\" y=\"194\" width=\"112\" height=\"96\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"392\" y=\"146\" width=\"112\" height=\"144\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"504\" y=\"98\" width=\"112\" height=\"192\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"616\" y=\"50\" width=\"112\" height=\"240\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><circle cx=\"672\" cy=\"22\" r=\"18\" fill=\"INK\"/>",
+      "object_labels": [
+        { "x": 224, "y": 334, "text": "부탁", "color": "MUTED" },
+        { "x": 710, "y": 32, "text": "답", "color": "MUTED", "anchor": "start" }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "narrative_role": "작동",
+      "context_label": "단계마다 되짚기",
+      "hero_copy": [
+        "24명이 AI의 단계를",
+        "하나씩 되짚었다"
+      ],
+      "hero_number": null,
+      "support_copy": "단계마다 골랐다. 내가 시킨 건가, AI가 알아서 한 건가.",
+      "footnote": [
+        "LLM을 자주 쓰는 한국 대학 커뮤니티 24명. 과제 3개 중 하나를 20분.",
+        "과제를 마치고 결과물을 본 뒤, 추론 기록을 단계마다 직접 판단했다."
+      ],
+      "object_state": "같은 계단. 가운데 칸의 테두리가 강조색으로 바뀌고, 위에서 강조색 화살표가 그 칸을 가리킨다. 위에 '이 단계는 누가 시작했나?'라는 질문이 붙는다.",
+      "layout": "mid-object",
+      "object_height": 330,
+      "object_svg": "<rect x=\"168\" y=\"242\" width=\"112\" height=\"48\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"280\" y=\"194\" width=\"112\" height=\"96\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"504\" y=\"98\" width=\"112\" height=\"192\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"616\" y=\"50\" width=\"112\" height=\"240\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"392\" y=\"146\" width=\"112\" height=\"144\" fill=\"BG\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"448\" y1=\"48\" x2=\"448\" y2=\"118\" stroke=\"ACCENT\" stroke-width=\"4\" marker-end=\"url(#ar-accent)\"/>",
+      "object_labels": [
+        { "x": 448, "y": 26, "text": "이 단계는 누가 시작했나?", "color": "INK" }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "narrative_role": "분할",
+      "context_label": "답변의 앞과 끝",
+      "hero_copy": [
+        "답변 끝으로 갈수록",
+        "'AI가 알아서'라고 봤다"
+      ],
+      "hero_number": null,
+      "support_copy": "참여자가 'AI가 알아서 했다'고 본 단계의 비율이다.",
+      "footnote": [
+        "답변 하나의 추론을 다섯 구간으로 나눔. 첫 구간 31.1% → 마지막 61.4%.",
+        "단계별 판단 992건 기준. 사람 수가 아니다."
+      ],
+      "object_state": "계단이 같은 높이의 다섯 칸으로 펴진다. 첫 칸은 위쪽 약 3할만, 마지막 칸은 위쪽 약 6할이 강조색('AI가 알아서')이고 나머지는 검정('내가 시켰다'). 가운데 세 칸은 점선 외곽선으로만 남는다(카드에서 다루지 않는 구간).",
+      "layout": "mid-object",
+      "object_height": 340,
+      "object_svg": "<rect x=\"168\" y=\"60\" width=\"112\" height=\"68\" fill=\"ACCENT\"/><rect x=\"168\" y=\"128\" width=\"112\" height=\"152\" fill=\"INK\"/><rect x=\"280\" y=\"60\" width=\"112\" height=\"220\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><rect x=\"392\" y=\"60\" width=\"112\" height=\"220\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><rect x=\"504\" y=\"60\" width=\"112\" height=\"220\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><rect x=\"616\" y=\"60\" width=\"112\" height=\"135\" fill=\"ACCENT\"/><rect x=\"616\" y=\"195\" width=\"112\" height=\"85\" fill=\"INK\"/>",
+      "object_labels": [
+        { "x": 168, "y": 36, "text": "위: AI가 알아서 했다", "color": "ACCENT", "anchor": "start" },
+        { "x": 728, "y": 36, "text": "아래: 내가 시켰다", "color": "INK", "anchor": "end" },
+        { "x": 224, "y": 326, "text": "첫 구간", "color": "MUTED" },
+        { "x": 672, "y": 326, "text": "마지막 구간", "color": "MUTED" }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "narrative_role": "결과",
+      "context_label": "되짚은 단계 992건 중",
+      "hero_copy": [],
+      "hero_number": {
+        "value": "48.6",
+        "unit": "%"
+      },
+      "support_copy": "참여자가 '내가 시킨 게 아니라 AI가 알아서 했다'고 본 단계.",
+      "footnote": [
+        "사람 수가 아니라 단계별 판단 992건 기준. 24명, 과제 3개, 모델 하나.",
+        "결과물을 본 뒤 되짚은 판단이라 사후 판단이 섞였을 수 있다."
+      ],
+      "object_state": "오브젝트 대신 숫자가 화면을 차지한다. 전체 단계별 판단 992건 중 참여자가 'AI가 알아서 했다'고 고른 비율.",
+      "layout": "number",
+      "object_height": 0,
+      "object_svg": "",
+      "object_labels": []
+    },
+    {
+      "slide_number": 5,
+      "narrative_role": "오해 방지",
+      "context_label": "자주 하는 오해",
+      "hero_copy": [
+        "AI가 알아서 한 일이",
+        "다 원치 않은 건 아니다"
+      ],
+      "hero_number": null,
+      "support_copy": "알아서 한 단계의 상당수는 원하던 쪽으로 기여했다.",
+      "footnote": [
+        "'AI가 알아서 했다'고 본 단계 중 62.7%. 원했는지도 참여자 본인의 판단.",
+        "결과물의 품질이나 AI 의존을 따로 잰 연구는 아니다."
+      ],
+      "object_state": "'AI가 알아서 한' 계단 한 칸을 크게 확대했다. 아래 약 6할은 강조색으로 채워져 있고('원하던 쪽으로 기여'), 위 약 4할은 점선 외곽선만 남아 지워져 있다('그렇지 않음').",
+      "layout": "mid-object",
+      "object_height": 320,
+      "object_svg": "<rect x=\"308\" y=\"137\" width=\"280\" height=\"163\" fill=\"ACCENT\"/><rect x=\"308\" y=\"40\" width=\"280\" height=\"97\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        { "x": 612, "y": 228, "text": "원하던 쪽으로 기여", "color": "ACCENT", "anchor": "start" },
+        { "x": 612, "y": 98, "text": "그렇지 않음", "color": "MUTED", "anchor": "start" }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "narrative_role": "개방",
+      "context_label": "남은 질문",
+      "hero_copy": [
+        "어느 단계에서",
+        "AI가 먼저 물어야 할까"
+      ],
+      "hero_number": null,
+      "support_copy": "참여자들은 단계의 63.9%는 묻지 말고 진행하길 원했다.",
+      "footnote": [
+        "질문은 편집자의 해석입니다. 묻는 장치의 효과는 시험하지 않았다.",
+        "AI가 알아서 한 중요한 일이 빗나간 단계에선 82%가 '먼저 물어봐 주길' 원했다."
+      ],
+      "object_state": "다시 오르는 계단. 네 번째 칸이 비어 점선 외곽선만 남았고, 그 빈칸 위에 강조색 원 하나가 떠 있다. 어느 칸에서 멈춰 물어야 할지는 열려 있다.",
+      "layout": "center-object",
+      "object_height": 310,
+      "object_svg": "<rect x=\"168\" y=\"242\" width=\"112\" height=\"48\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"280\" y=\"194\" width=\"112\" height=\"96\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"392\" y=\"146\" width=\"112\" height=\"144\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"616\" y=\"50\" width=\"112\" height=\"240\" fill=\"BG\" stroke=\"INK\" stroke-width=\"7\"/><rect x=\"508\" y=\"102\" width=\"104\" height=\"184\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/><circle cx=\"560\" cy=\"52\" r=\"20\" fill=\"ACCENT\"/>",
+      "object_labels": []
+    }
+  ],
+  "caption": "예를 들어 AI에게 '피치 슬라이드 만들어 줘'라고 부탁하면, 답이 나오기 전 화면에는 여러 추론 단계가 기록된다. 그중 내가 시킨 것은 어디까지일까.\n\nKAIST 연구팀은 LLM을 자주 쓰는 24명에게 피치 슬라이드 만들기, 에너지 비교 해설문 쓰기, 자기소개서 고치기 중 하나를 20분 동안 AI와 하게 했다. 과제를 마친 뒤 참여자들은 AI의 추론 기록을 단계마다 되짚으며 '내가 시켰다'와 'AI가 알아서 했다' 중 하나를 골랐다. 이렇게 모인 단계별 판단이 992건이다.\n\n참여자들은 전체 단계의 48.6%를 'AI가 알아서 했다'고 봤다. 한 답변 안에서도 첫 구간은 31.1%, 마지막 구간은 61.4%로 뒤로 갈수록 높았다. 다만 AI가 알아서 한 단계의 62.7%는 원하던 쪽으로 기여했다. 참여자들은 단계의 63.9%는 묻지 말고 진행하길 원했고, AI가 알아서 맡은 중요한 일이 원하던 대로 되지 않은 단계에서는 82%가 '먼저 물어봐 주길' 바랐다.\n\n주의. 결과물을 본 뒤 되짚은 판단이라 사후 판단이 섞였을 수 있다. 숫자는 사람이 아니라 단계 기준이다. 모델 하나, 짧은 과제 3개, 24명이라 일반화하기 어렵고, 결과물 품질이나 AI 의존은 재지 않았다. 아직 동료평가를 거치지 않은 프리프린트입니다.\n\n출처: Kim et al. (2026) https://arxiv.org/abs/2610.06328",
+  "hashtags": [
+    "#HCI",
+    "#생성형AI",
+    "#LLM",
+    "#AI협업",
+    "#AI에이전트",
+    "#위임",
+    "#프롬프트",
+    "#UX리서치",
+    "#AI서비스",
+    "#연구노트"
+  ],
+  "alt_texts": [
+    "웜 오프화이트 배경 위, 왼쪽 아래 '부탁'에서 오른쪽 위로 오르는 다섯 칸 계단. 속이 빈 검은 테두리 블록이고 맨 위 칸에 검은 원과 '답' 라벨. 큰 글씨 'AI에게 하나를 시켰는데 몇 가지를 했을까'.",
+    "같은 다섯 칸 계단에서 가운데 칸의 테두리만 주황색이고, 위에서 주황 화살표가 그 칸을 가리킨다. 위에 '이 단계는 누가 시작했나?' 문구. 큰 글씨 '24명이 AI의 단계를 하나씩 되짚었다'.",
+    "같은 높이의 다섯 칸. 첫 칸은 위쪽 약 3할만 주황, 마지막 칸은 위쪽 약 6할이 주황이고 아래는 검정. 가운데 세 칸은 점선 외곽선. 위 라벨 '위: AI가 알아서 했다', '아래: 내가 시켰다', 아래 라벨 '첫 구간', '마지막 구간'. 큰 글씨 '답변 끝으로 갈수록 'AI가 알아서'라고 봤다'.",
+    "화면을 채운 큰 숫자 '48.6%'. 되짚은 단계 992건 중 참여자가 'AI가 알아서 했다'고 본 단계의 비율이며, 사람 수가 아니라 단계 기준이고 사후 판단이 섞였을 수 있다는 각주.",
+    "크게 확대한 블록 한 칸. 아래 약 6할은 주황으로 채워져 '원하던 쪽으로 기여', 위 약 4할은 점선 외곽선만 남아 '그렇지 않음' 라벨. 큰 글씨 'AI가 알아서 한 일이 다 원치 않은 건 아니다'.",
+    "다섯 칸 계단에서 네 번째 칸이 비어 점선 외곽선만 남았고, 그 위에 주황 원 하나가 떠 있다. 큰 글씨 '어느 단계에서 AI가 먼저 물어야 할까'."
+  ],
+  "verification_items": [
+    "표본: LLM을 자주 쓰는 24명(여 12·남 12, 평균 25.75세), 대학 온라인 커뮤니티 공고로 모집 — 3.3절 대조. 저자 소속 KAIST(대전) → 카드 '한국 대학 커뮤니티'. 과제 3개(창작·정보·조언) 각 8명, 사전 경험 기준 배정(무작위 아님) (2장 hero·footnote, 캡션)",
+    "절차: 과제 20분 → 90분 회고 주석·인터뷰. 결과물을 본 뒤 각 단계를 'I prompted it(User-initiated) / AI did it(AI-initiated)'으로 판단 — 3.4절·3.4.2절 대조 (2장 support·footnote)",
+    "데이터: 추론 단계 956개, 대화 턴 139개, 단계별 주석 992건 — 3.5절 대조. 분석 단위는 992건 주석(논문도 '992 annotated reasoning steps'로 부름). 카드에는 '단계별 판단 992건'으로 표기 (3·4장 footnote, 캡션)",
+    "4장 48.6%: 'Participants judged 48.6% of all steps as AI-initiated, meaning that they saw the AI as taking on work they had not requested' — 5.2.1절 대조. 참여자의 사후 판단이며 사람 비율이 아님. 'AI가 지시를 어겼다'로 쓰지 않음",
+    "Initiative 라벨은 참여자 자신의 구조화 판단에서 직접 나옴 — 4.5절 'Delegation Enactment labels were derived directly from participants’ structured annotations' 대조. LLM 보조 코딩은 인지 작업 종류·원하는 방식 분류에만 쓰였다",
+    "3장 31.1% → 61.4%: 5.2.4절 'first fifth of a turn … final fifth (p<.001)' 대조. '다섯 구간'은 원문 fifth를 옮긴 것. 가운데 세 구간 값은 카드에 쓰지 않고 그림에서도 점선으로만 둠",
+    "3장 관련 null_result(F16): 뒤쪽에서 AI가 알아서 한 단계가 원치 않을 가능성이 유의하게 높지는 않았다 — 카드에서 '뒤로 갈수록 나빠졌다'는 쓰지 않음",
+    "5장 62.7%: 'Of the AI-initiated steps, 62.7% contributed as users wanted' — 5.2.2절 대조. 분모는 AI가 알아서 했다고 본 단계(전체의 48.6%)이며 footnote에 명시. '원했나'도 참여자 판단",
+    "5장 오브젝트 비율: 확대 블록의 채운 부분 163px / 전체 260px ≈ 62.7%",
+    "3장 오브젝트 비율: 첫 칸 강조색 68/220 ≈ 31%, 마지막 칸 135/220 ≈ 61%",
+    "6장 63.9%: 'For most steps (63.9%), participants wanted the AI to proceed without consulting or notifying them' — 5.3절 대조. 82%: Overreaching Delegation(AI가 알아서 맡은 중요한 일이 원하던 대로 기여하지 않은 단계, 114개) 중 '하기 전에 물어보기' 선호 — 5.3.1절 대조",
+    "6장 질문은 편집자의 해석으로 footnote 표기. 저자의 설계 스케치는 'proposals rather than evaluated interfaces'(7.4절) — '묻는 장치의 효과는 시험하지 않았다'",
+    "한계: 24명·과제 3개(A3), 모델 하나(gemini-3.5-flash)·인터페이스 하나(A4, A9), 사후 판단·결과 편향 가능성(A2), 짧고 부담 적은 과제(A13), 일반 패턴으로 보기 전 추가 확인 필요(A5) — 7.4절 대조 (4장 footnote, 캡션)",
+    "게재 상태: arXiv comment·journal_ref 없음, 본문의 학회 정보가 ACM 템플릿 자리표시자('Woodstock ’18') → 프리프린트. 캡션에 '아직 동료평가를 거치지 않은 프리프린트입니다' 포함",
+    "캡션 1문단의 '피치 슬라이드 만들어 줘'는 연구의 창작 과제(피치 슬라이드)를 예로 든 가상의 부탁이며, 참여자가 실제로 쓴 프롬프트 인용이 아니다. attempt 1 GPT 지적(minor)에 따라 '예를 들어'와 '화면에는 여러 추론 단계가 기록된다'(모델 내부 사고가 아니라 화면에 남은 기록, A7)로 교체",
+    "의존·결과물 품질·판단력 변화는 측정하지 않았다 — 5장 footnote, 캡션 4문단에 명시. 족쇄·경고 은유 사용 안 함"
+  ],
+  "human_check_items": [
+    "원문 링크(https://arxiv.org/abs/2610.06328)가 열리는지, 게재처가 새로 표기됐는지(현재 프리프린트)",
+    "4장 '48.6%'가 '사람의 48.6%'나 'AI가 지시를 어긴 비율'로 읽히지 않는지 — 단계별 판단 기준이고, 참여자가 결과를 본 뒤 내린 판단이다",
+    "1장 hero '몇 가지를 했을까'가 AI가 몰래 무언가를 한다는 불안 프레임으로 읽히지 않는지",
+    "2장 footnote '한국 대학 커뮤니티'는 저자 소속(KAIST)과 '우리 대학 온라인 커뮤니티' 표현에서 추론한 것 — 원문에 국가가 직접 적혀 있지는 않다",
+    "3장 그림에서 가운데 세 칸을 점선으로 비운 것이 '측정하지 않았다'로 오해되지 않는지 — 원문 Figure 8에 값이 있으나 본문에 수치가 없어 카드에서 다루지 않았다",
+    "강조색 #C4581A(번트 오렌지)가 10-01 #D9772B와 계열이 비슷하지만 18일 전이라 14일 규칙 밖",
+    "해시태그 톤"
+  ],
+  "status": "awaiting_human_review"
+}

@@ -1,0 +1,40 @@
+﻿[04:18:46] INFO  ─────────────────────────────────────────────
+[04:18:46] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[04:18:46] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:18:46] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.286\635c1867224a\claude.exe
+[04:18:46] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:18:46] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\de8a38d2100ae498\codex.exe
+[04:18:46] INFO  인증: 저장된 자격증명 파일
+[04:18:46] INFO  claude 헤드리스 세션 시작 …
+[04:27:45] INFO  claude 종료  exit=0  9분
+[04:27:45] INFO  ── 출력 끝부분 ──
+오늘 실행은 **`verify_failed`**로 끝났습니다. GPT 교차검증(5단계)을 실행하지 못해서 카드 PNG는 만들지 않았고, `state/index.jsonl`에도 추가하지 않았습니다.
+
+**검증이 막힌 이유**
+- `verify.py`가 3초 만에 종료 코드 30으로 끝났습니다.
+- `_codex_log.txt`를 보니 Codex 사용량 한도였습니다: "usage limit … try again at Oct 4th, 2026 4:42 AM".
+- 일시적 오류가 아니어서 재시도하지 않았습니다. 지시서대로 검증 없이 카드를 만들지 않았습니다.
+
+**완료한 단계 (작업 폴더: `output/20261003_자기_열쇠로_잠가서_보냈다/`)**
+- **조사:** 토요일 고전 연구로 Whitten & Tygar, *Why Johnny Can't Encrypt* (USENIX Security 1999)를 골랐습니다.
+  - 이메일에 익숙한 12명에게 90분 동안 PGP 5.0으로 비밀 메일을 보내게 한 실험입니다.
+  - 암호화 방법을 찾은 11명 중 7명이 팀원 열쇠가 아니라 **자기 열쇠로 잠가 보냈습니다**.
+  - 후보는 12건을 검토했습니다. 2순위는 Mark 외, *The Cost of Interrupted Work* (CHI 2008)입니다.
+- **facts.json:** 원문 PDF 전문을 받아 확인했습니다. 원문 인용 22건을 스크립트로 대조했고 모두 일치했습니다.
+- **content.json:** 자가검사를 오류 0, 경고 0으로 통과했습니다. 오브젝트는 '열쇠', 강조색은 `#4A4FA3`이고 과거 이력과 겹치지 않습니다.
+- **미리보기:** 임시 폴더에 렌더해 6장을 직접 봤고 글자 잘림이나 겹침은 없었습니다. 산출물 폴더에는 PNG를 두지 않았습니다.
+
+**아침에 하실 일**
+1. 10-04 04:42 이후에 아래 명령으로 검증을 다시 돌리세요. pass가 나오면 `render.py`를 실행하면 됩니다. `NOTES.md`에 명령어를 그대로 적어 두었습니다.
+   ```
+   python automation/verify.py --dir "output/20261003_자기_열쇠로_잠가서_보냈다" --attempt 1
+   ```
+2. **내일 새벽 무인 실행도 같은 한도에 걸릴 가능성이 큽니다.** 오늘 실행이 04:18에 시작했는데, 한도는 04:42에 풀립니다. 실행 시각을 늦추거나 Codex 크레딧을 확인해 주세요.
+3. 다음 실행이 이 폴더를 만나면 `PROGRESS.log`를 보고 5단계부터 이어받습니다.
+
+게시 전에 직접 보셔야 할 문구(5장 "서툰 사람들의 이야기가 아니다" 등)는 `NOTES.md`에 정리해 두었습니다.
+
+참고로 이 세션에서 Canva와 Google Drive 커넥터가 인증되지 않은 상태였습니다. 이번 작업에는 쓰지 않았지만, 필요하면 claude.ai 커넥터 설정에서 연결해야 합니다.
+[04:27:45] INFO  결과: 20261003_자기_열쇠로_잠가서_보냈다  status=verify_failed  PNG=0장
+[04:27:45] WARN  사람 확인 필요 — status=verify_failed
+[04:27:45] INFO  파이프라인 종료

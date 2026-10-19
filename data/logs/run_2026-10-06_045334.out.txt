@@ -1,0 +1,31 @@
+The cards for 2026-10-06 (Tuesday: chatbots, anthropomorphism, social interaction) are done. GPT cross-check passed on the third and last allowed try. The status is set to `awaiting_human_review`, and nothing was posted to Instagram.
+
+**Topic:** an experiment inside a public Santa hotline in Germany ([arXiv 2609.38782](https://arxiv.org/abs/2609.38782)). Children's calls were randomly routed to one of four AI voice agents. The agent called itself either Santa or "Santa's Helper", and either just chatted or gently asked about wishes for someone else.
+- When the agent was set up to ask, 46% of calls included a wish for someone else, against 12% when it just chatted.
+- Santa versus Helper made no clear difference to that rate.
+- Calls the Helper answered were much more often over within a minute: 65% against 39% for Santa, counted over all 494 calls in the study window.
+
+**Verification:**
+1. **Attempt 1:** GPT flagged that the 65%/39% figures come from all 494 calls, not the 89 analysed ones. I added that to slide 5 and the caption.
+2. **Attempt 2:** a blocker. The 46% is based on the 46 calls assigned to ask, but the question was only confirmed in 35 of them. I reworded the cards and caption to say "set up to ask" and added the 35-call figure to slide 3.
+3. **Attempt 3:** passed.
+
+**Before posting, please check:**
+- **Caption opening (not fixed):** GPT's last note says "아이가 산타에게 전화를 건다" makes it sound like children called on their own. In fact a parent had to consent before the number could be reached. Fixing it would change the meaning and need another check, and none were left. NOTES.md has a suggested replacement line.
+- **Venue:** the paper says it was accepted at HICSS-60 (2027), but I couldn't confirm that on the conference side.
+- **Ethics:** this is a study on children who weren't told they were talking to an AI, so the comments may raise ethics concerns.
+- **Misreading risk:** make sure 46% doesn't read as "half of children are persuaded by AI", and that 65% doesn't read as "children hung up".
+
+The NOTES.md list also covers the quote translation, accent colour #B03A2E and hashtags. After rendering I looked at all six images and fixed one label that overlapped a shape on slide 2, plus a spacing issue on slide 6. Those were position-only changes, so no re-check was needed.
+
+Files are in `output/20261006_산타_핫라인_AI_음성_실험/`:
+- NOTES.md
+- STATUS
+- PROGRESS.log
+- slide_1–6.png / .svg
+- caption.txt
+- alt_texts.txt
+
+I added a line for this post to `state/index.jsonl`.
+
+The two connectors Canva and Google Drive need to be re-authorised in your claude.ai connector settings. The pipeline doesn't use them.

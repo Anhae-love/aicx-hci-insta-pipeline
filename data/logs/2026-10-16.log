@@ -1,0 +1,36 @@
+﻿[03:12:04] INFO  ─────────────────────────────────────────────
+[03:12:04] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[03:12:04] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:12:05] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.295\d2e29494ec83\claude.exe
+[03:12:05] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:12:05] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\2e5e00daee91c61d\codex.exe
+[03:12:05] INFO  인증: 저장된 자격증명 파일
+[03:12:05] INFO  claude 헤드리스 세션 시작 …
+[03:21:33] INFO  claude 종료  exit=0  9.5분
+[03:21:33] INFO  ── 출력 끝부분 ──
+The run finished and passed GPT cross-verification on the first attempt with 0 issues. The status is `awaiting_human_review`, and nothing was published.
+
+**Paper:** "Am I Just Dumb?": Applicability, Action and Verification in Consumer IoT Security Advice (arXiv 2608.25225, TU Delft). It fits Friday's topic (UX failure).
+- 28 adults tried the common advice "change your default password" on popular smart devices.
+- In 50 of 84 attempts they reached the manufacturer **account** password setting instead of a password on the device itself.
+- In **49** of those 50, they concluded they had followed the advice.
+- No attempt reached the kind of password the advice describes (one set on the device at the factory and publicly known). The research team couldn't find one on any of the six devices either.
+
+**How it went:**
+- I reviewed 10 candidates and read the chosen paper's full text.
+- I wrote `facts.json` first: 16 findings and 13 author statements. A script confirmed all 29 quotes appear word for word in the paper.
+- The self-check in `render.py` passed with 0 errors and 0 warnings. Before verification I fixed two things from the preview:
+  - Slide 3's headline read as if all 84 attempts went to the account password, so it now says "more than half of the attempts".
+  - Slide 6's support text left one word stranded on a second line, so I shortened it.
+- I then rendered all six cards and looked at each PNG. No text is cut off or overlapping.
+- The cards follow a single password input field through all six slides, in ochre (`#B07D1A`).
+
+**For you to check before posting** (also listed in `NOTES.md`):
+1. Slide 4's "49번" counts attempts, not people. The footnote says so, but check it doesn't read as "49 people" at first glance.
+2. Slide 5's headline ("not finding it doesn't mean it's your fault") rests on two findings: the researchers couldn't find that password either, and the 14 people who blamed themselves ended up in similar places to the 14 who didn't. The study didn't measure participants' actual skill, so soften it if it reads like too much reassurance.
+3. The paper shows no venue on arXiv, so the caption says it's a preprint. Confirm it hasn't since been accepted somewhere.
+4. The ochre is close to the 09-26 colour (`#B8862B`), but that post never got past needs_human.
+
+I also added one line to `state/index.jsonl`. Everything else is in `output/20261016_기본_비밀번호를_바꾸라는_조언/`.
+[03:21:33] INFO  결과: 20261016_기본_비밀번호를_바꾸라는_조언  status=awaiting_human_review  PNG=6장
+[03:21:33] INFO  파이프라인 종료

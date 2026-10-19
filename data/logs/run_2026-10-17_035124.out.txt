@@ -1,0 +1,22 @@
+I finished the whole pipeline. The post is drafted and waiting for your review (`awaiting_human_review`). Nothing was published to Instagram.
+
+**Folder:** `output/20261017_방해받으며_메일에_답한_실험/`
+
+- **Topic (Saturday, classic research):** Mark, Gudith & Klocke, *The Cost of Interrupted Work: More Speed and Stress* (CHI 2008). I read the full paper from the author's PDF and confirmed it was published at CHI 2008 through Crossref.
+- **Core finding:** People answered 12 emails per condition while a "boss" interrupted them with questions every 2 minutes. Not counting time spent answering the questions, they finished faster when interrupted: 20.3–20.6 minutes, versus 22.8 minutes with no interruptions.
+  - **The catch:** they rated their own stress, frustration and effort higher when interrupted.
+  - **Slide 5 corrects the obvious misreading:** finishing faster doesn't mean interruptions help. Differences in errors and politeness weren't significant, and that doesn't prove quality was equal.
+- **Visual:** a single envelope that changes across the six slides, in cobalt (#2E5EAA). The envelope hasn't been used before, and the colour doesn't repeat any of the last 14 days.
+- **How I checked it:**
+  - All 29 quotes in `facts.json` match the source text word for word.
+  - The renderer's built-in checks passed with 0 errors and 0 warnings.
+  - GPT cross-check, attempt 1: pass. Its one minor point was that slide 2 could read as the same emails being repeated. I reworded it.
+  - GPT cross-check, attempt 2: pass with no issues.
+- **Finished:** six cards rendered (PNG and SVG), plus the caption and alt text files. I opened every PNG and saw no clipped or overlapping text.
+- **Recorded:** `STATUS`, `NOTES.md` and `PROGRESS.log` are written, and one line was added to `state/index.jsonl`.
+
+**Check before posting** (the full list is in `NOTES.md`):
+1. Slide 3's headline, "오히려 더 빨리 끝냈다" ("actually finished faster"), could be read as "interruptions make you more productive." Slide 5 corrects this, but some readers may stop at slide 3.
+2. Slide 4's stress result comes only from participants rating themselves on a 20-point scale. Make sure it doesn't read as a health risk.
+3. This is a 2008 study, and the interruptions came by phone and instant messenger. You may want the caption to say that this isn't quite the same as today's app notifications.
+4. Check that the author PDF and DOI links open. The ACM page blocked my script, so I never saw the DOI landing page; the publication details come from Crossref.

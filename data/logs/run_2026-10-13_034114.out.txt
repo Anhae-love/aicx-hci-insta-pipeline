@@ -1,0 +1,24 @@
+Today's run finished. The card set passed verification on the third and last allowed attempt, and STATUS is `awaiting_human_review`. Nothing was posted to Instagram.
+
+**Topic** (Tuesday: chatbots, anthropomorphism, emotion, social interaction): **"비서 이름을 바꾼 사람들의 말투"**
+- **Source:** arXiv 2610.13156, a preprint under review for CHI 2027. I read the full text, and all 25 quotes in `facts.json` match it word for word.
+- **Study:** three months of real chat logs from one desktop AI assistant, 257 users.
+- **Renaming:** 118 of them (45.9%) changed the assistant's default name.
+- **Openings:** among the 103 users with at least 3 questions, those who renamed it tended to open with greetings more; those who kept the default used more commands.
+- **Revised assistant:** the researchers built new replies that greet back and acknowledge feelings first. In 60.1% of the renamers' judgments, they picked the new reply as treating them "as someone to talk to". For default-name users it was 38.0%.
+- **Visual:** one name tag, in teal `#16878C`.
+
+**Verification**
+- **Attempt 1, revise (4 issues).** The blocker: slide 4's label described the emotion question, but 60.1% comes from the "someone to talk to" question. Fixed.
+- **Attempt 2, revise (3 issues).** Slide 5's two-way arrows suggested we don't know which came first. That's wrong, because the name is set at first use. I replaced them with a plain dashed line labelled "원인은 확인 못함". The other two issues were also fixed.
+- **Attempt 3, pass with 0 issues.** I fixed everything flagged and declined nothing.
+
+**Before posting, please check:**
+- 60.1% counts judgments, not people, so it shouldn't read as "60.1% of users".
+- "그냥 해" on slide 3 is my translated example of a command, not a real user quote.
+- The paper counts any non-default name as "renamed", including names like "assistant 2", not only human names. Slide 1's "이름을 붙여준" could suggest human names only; slide 2's footnote corrects this.
+- The teal may look too close to the 09-27 and 09-30 accent colours.
+
+One mishap: a write to my temporary script failed, so the copied script from 10/09 ran once and put 10/09's content into today's folder. I overwrote it with today's content right away. The 10/09 folder itself was not touched.
+
+Files are in `output/20261013_비서_이름을_바꾼_사람들의_말투/`; open `NOTES.md` first. One line was added to `state/index.jsonl`.

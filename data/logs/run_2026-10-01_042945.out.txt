@@ -1,0 +1,20 @@
+Today's (Thursday 10/1) card set is finished and waiting for your review (`awaiting_human_review`). GPT cross-checking passed on the second try with no issues left, and six slides are rendered. Nothing was posted to Instagram.
+
+**Topic**: people guessing which of two TikTok videos got more views.
+- **Source**: Hughes & Weninger, *Echoes in the Algorithm* ([arXiv 2609.09365](https://arxiv.org/abs/2609.09365)). I found no journal or conference publication, so the cards and caption label it a preprint (not yet peer-reviewed).
+- **Study**: 363 US adults compared pairs of TikTok videos 3,513 times, with likes and view counts hidden. For each pair they answered two questions: which video they liked more, and which one they thought had more views.
+- **Results**: they picked the more-viewed video about 57% of the time, where random guessing gets 50%. In about 83% of pairs, the video they liked was also the one they said had more views.
+- **Main caveat (slide 5)**: people were always asked which video they liked before guessing views. So the 83% overlap may come from that fixed order, and it doesn't show that people naturally judge popularity by their own taste. The authors call this their biggest limitation.
+- **Visual**: a balance scale with two video frames on it. I kept it level so it doesn't suggest people "weigh popularity wrongly."
+
+**What happened along the way**
+- I read the full paper text, and a script confirmed all 16 English quotes match it word for word.
+- 13 candidate papers reviewed. The runner-up was the Facebook "opposing comments" experiment, dropped because it centers on racial-justice and political attitudes.
+- GPT's first check had one minor issue: the cards never said "TikTok," so they could read as a study of real feeds. I used its suggested fix (slide 1 label "틱톡 두 영상 비교") and also named TikTok in the slide 2 footnote. The second check passed with no issues.
+- After rendering I looked at every slide. The only change was a line break on slide 5 (wording unchanged, so no re-check needed).
+
+**Please check before posting**
+- Slide 3's headline ("마음에 든 영상을 대개 더 퍼졌다고 봤다" — "they usually said the video they liked had more views") is misleading on its own. It needs to be read together with slide 5.
+- Whether the paper has since been published somewhere. If so, the preprint line in the caption should change.
+
+Everything is in `output/20261001_어느_영상이_더_떴는지_맞히기/`. Open `NOTES.md` first. The files starting with `_` are working files and can be deleted. I also added one line for today to `state/index.jsonl`.

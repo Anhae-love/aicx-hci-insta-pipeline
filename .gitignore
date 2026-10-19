@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+# 수업 규칙: 비밀키·원문 전문·AI 대화 전체는 올리지 않는다
+**/_source*
+**/_codex_log.txt
+**/_verify_instructions.md
+**/rules.md
+.env
+*.key
+# 공개 저장소: 내부 검토 파일 제외
+**/facts.json
+**/verdict.json
+**/_verdict_raw.txt
+**/previous_verdict.json
+**/content.attempt*.json
+**/PROGRESS.log
+**/attempt.txt

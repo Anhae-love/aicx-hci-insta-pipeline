@@ -1,0 +1,25 @@
+﻿[04:28:25] INFO  ─────────────────────────────────────────────
+[04:28:25] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[04:28:25] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.275\claude.exe
+[04:28:25] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\12219cbfbcbddde7\codex.exe
+[04:28:25] INFO  인증: 저장된 자격증명 파일
+[04:28:25] INFO  claude 헤드리스 세션 시작 …
+[04:56:52] INFO  claude 종료  exit=0  28.5분
+[04:56:52] INFO  ── 출력 끝부분 ──
+완료했습니다. 요약:
+
+## 결과: `output/20260927_알림을_꺼도_안_통하는_사람들이_있다/` — **STATUS = awaiting_human_review**
+
+**선정 주제**: 프로그래밍 중 휴대폰 알림을 차단하면 작업 중단 빈도가 평균 19% 줄지만, 22명 중 8명에게는 그런 효과가 없었다는 arXiv 프리프린트(2605.22657). 원문 PDF 전체를 직접 읽고 확인했습니다.
+
+**진행**:
+1. 후보 11건 조사(8건 이상 요구조건 충족), 원문 접근 실패·취약집단 낙인 위험·중복 주제 등으로 걸러 최종 선정
+2. `facts.json` 먼저 작성(findings 8건, null_result 1건, source_quote 전부 원문 대조)
+3. `content.json` 작성 → 자가검사 1차 실패(수치 누락 2건) → 수정 후 통과
+4. GPT(codex) 교차검증 — **attempt 1: revise(blocker 2)** → 수정 → **attempt 2: revise(blocker 1)** → 수정 → **attempt 3: pass**. 핵심 지적은 "개별 알림 도착을 관찰한 것처럼 서술", "상관관계를 인과처럼 표현" — 전부 반영
+5. 카드 6장 렌더 후 PNG 직접 열람 — 슬라이드3 오브젝트가 `number` 레이아웃에서 안 그려지는 걸 발견(엔진 설계상 의도된 동작), 단순화하고 재렌더
+6. `state/index.jsonl` 추가, `NOTES.md`에 탈락 후보·GPT 지적사항·게시 전 확인사항 상세 기록
+
+새벽 시간 대부분(조사~검증 3회)을 이 한 건에 썼고, 지시서 원칙대로 다른 주제로 추가 실행하지 않고 여기서 종료합니다. `NOTES.md`에 사람이 게시 전 확인할 5가지 항목을 남겨뒀습니다.
+[04:56:52] INFO  결과: 20260927_알림을_꺼도_안_통하는_사람들이_있다  status=awaiting_human_review  PNG=6장
+[04:56:52] INFO  파이프라인 종료

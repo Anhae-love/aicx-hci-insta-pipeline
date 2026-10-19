@@ -1,0 +1,194 @@
+{
+  "date": "2026-09-25",
+  "weekday_category": "금 — 인터페이스, UX 실패, 다크패턴, 주의와 기억",
+  "content_title": "가입은 쉬웠다, 해지는 아니었다",
+  "source_title": "Staying at the Roach Motel: Cross-Country Analysis of Manipulative Subscription and Cancellation Flows",
+  "source_url": "https://arxiv.org/abs/2309.17145",
+  "source_access_status": "원문 확인",
+  "is_preprint": false,
+  "selection_sentence": "이 연구는 온라인 뉴스 구독 서비스의 가입과 해지 절차를 미국·독일·네덜란드·영국에서 연구자가 직접 시도해봤고, 대부분 해지가 가능하긴 했지만 그 과정에서 전화 통화나 특정 문구 입력 같은 의도적인 장벽을 마주치는 경향을 발견했다. 하지만 이 장벽이 실제 이용자의 해지 포기나 지속 결제로 이어지는지까지 확인한 것은 아니다.",
+
+  "candidates": [
+    {
+      "title": "Dark patterns in subscription service cancellation processes (Nembaware & Sousa, ECCE 2025)",
+      "url": "https://dl.acm.org/doi/10.1145/3746175.3746211",
+      "reject_reason": "원문 접근 실패 — ACM/ResearchGate 모두 유료 페이월, 전문 대조 불가"
+    },
+    {
+      "title": "UX experts vs. AI: exploring the performance of large language models and humans on detecting dark patterns",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01151-x",
+      "reject_reason": "카파계수·재현율 같은 통계용어 없이 핵심 결과를 설명하기 어렵고, 인간행동보다 AI-대-인간 탐지성능 비교에 가까워 계정 톤과 거리가 있음"
+    },
+    {
+      "title": "Attention hijacked: How social media notifications disrupt cognitive processing (Fournier et al., Computers in Human Behavior 2026)",
+      "url": "https://doi.org/10.1016/j.chb.2026.108926",
+      "reject_reason": "원문 접근 실패 — ScienceDirect 유료, 2차 요약 기사로만 확인되어 source_quote를 원문 그대로 확보할 수 없음"
+    },
+    {
+      "title": "Attention, Action, and Memory: How Multi-modal Interfaces and Cognitive Load Alter Information Retention",
+      "url": "https://arxiv.org/abs/2509.05898",
+      "reject_reason": "표본 12명으로 과소. 3개 조건 × 즉시/24시간 두 시점 결과가 얽혀 있어 단일 오브젝트·6장으로 압축하기 어려움"
+    },
+    {
+      "title": "ATTention Please! An Investigation of the App Tracking Transparency Permission (USENIX Security 2024)",
+      "url": "https://www.usenix.org/system/files/sec24summer-prepub-1232-mohamed.pdf",
+      "reject_reason": "PDF 텍스트 추출이 반복적으로 실패해 원문 문장을 그대로 대조할 수 없음 — 접근 불확실로 배제"
+    },
+    {
+      "title": "Understanding the Sneaky Patterns of Pop-up Windows in the Mobile Ecosystem",
+      "url": "https://arxiv.org/abs/2505.12056",
+      "reject_reason": "자동 탐지 시스템 연구로 인간 참가자 실험이 아니며, 흥미로운 인간행동 서사로 잇기 어려움"
+    },
+    {
+      "title": "Using Salient Object Detection to Identify Manipulative Cookie Banners that Circumvent GDPR",
+      "url": "https://arxiv.org/abs/2510.26967",
+      "reject_reason": "탐지 알고리즘을 제안하는 논문이지 인간 행동을 관찰한 연구가 아님"
+    },
+    {
+      "title": "How Dark Patterns Shape Consumer Behavior on Social Media: A Systematic Literature Review",
+      "url": "https://onlinelibrary.wiley.com/journal/14706431",
+      "reject_reason": "개별 실증 연구가 아니라 문헌 리뷰라 단일 findings로 압축할 수 없음"
+    },
+    {
+      "title": "Dark Haptics: Exploring Manipulative Haptic Design in Mobile User Interfaces",
+      "url": "https://arxiv.org/abs/2504.08471",
+      "reject_reason": "본문(PDF) 접근이 반복적으로 실패해 수치를 원문과 대조할 수 없음 — 접근 불확실로 배제"
+    }
+  ],
+
+  "object_name": "해지 화살표",
+  "object_rationale": "화살표 하나로 '해지가 가능하긴 하지만 순탄하지만은 않다'는 연구의 핵심을 그릴 수 있다. 대부분은 끝까지 곧게 이어지지만, 일부는 옆으로 새는 갈래를 거치거나 가려진 구간을 통과한다. 온라인 해지 성공 여부라는 하나의 갈림으로 6장을 끌고 간다.",
+  "accent_color": "#6E4C7A",
+
+  "slides": [
+    {
+      "slide_number": 1,
+      "narrative_role": "등장",
+      "context_label": "화면을 처음 볼 때",
+      "hero_copy": ["가입은", "버튼 하나로", "시작된다"],
+      "hero_number": null,
+      "support_copy": "",
+      "footnote": [],
+      "object_state": "화살표 하나가 곧게 뻗어 있다. 시작점에 동그란 버튼이 있을 뿐, 아직 어디로도 꺾이지 않았다.",
+      "layout": "top-object",
+      "object_height": 230,
+      "object_svg": "<line x1=\"188\" y1=\"110\" x2=\"668\" y2=\"110\" stroke=\"INK\" stroke-width=\"7\" marker-end=\"url(#ar)\"/><circle cx=\"188\" cy=\"110\" r=\"16\" fill=\"INK\"/>",
+      "object_labels": [
+        { "x": 188, "y": 160, "text": "가입 버튼", "color": "MUTED" }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "narrative_role": "작동",
+      "context_label": "연구팀이 되짚어본 것",
+      "hero_copy": ["연구팀은 그 버튼을", "거꾸로 눌러봤다"],
+      "hero_number": null,
+      "support_copy": "가입 67건을 만들고, 하나하나 해지를 시도했다.",
+      "footnote": ["뉴스 사이트 34곳, 미국·독일·네덜란드·영국.", "CHI 2024에서 발표된 연구."],
+      "object_state": "같은 화살표가 반대 방향으로 그려진다. 이번엔 중간에 점 하나가 추가로 찍힌다 — 해지 절차가 시작됐다는 뜻이다.",
+      "layout": "mid-object",
+      "object_height": 300,
+      "object_svg": "<circle cx=\"748\" cy=\"150\" r=\"16\" fill=\"MUTED\"/><line x1=\"748\" y1=\"150\" x2=\"468\" y2=\"150\" stroke=\"ACCENT\" stroke-width=\"7\"/><circle cx=\"468\" cy=\"150\" r=\"11\" fill=\"ACCENT\"/><line x1=\"468\" y1=\"150\" x2=\"148\" y2=\"150\" stroke=\"ACCENT\" stroke-width=\"7\" marker-end=\"url(#ar-accent)\"/>",
+      "object_labels": [
+        { "x": 748, "y": 190, "text": "구독 중", "color": "MUTED" },
+        { "x": 148, "y": 190, "text": "해지", "color": "ACCENT" }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "narrative_role": "분할",
+      "context_label": "끝까지 가 보니",
+      "hero_copy": ["온라인으로 된 길과", "전화가 필요한 길"],
+      "hero_number": null,
+      "support_copy": "",
+      "footnote": ["67건 모두 결국 해지됐다.", "63건은 온라인으로, 4건은 전화로."],
+      "object_state": "화살표가 두 갈래로 나뉜다. 굵은 줄기는 그대로 끝까지 이어지고, 가는 갈래 하나는 아래로 우회했다가 다시 끝으로 합류한다.",
+      "layout": "mid-object",
+      "object_height": 340,
+      "object_svg": "<circle cx=\"748\" cy=\"90\" r=\"14\" fill=\"MUTED\"/><line x1=\"748\" y1=\"90\" x2=\"148\" y2=\"90\" stroke=\"ACCENT\" stroke-width=\"7\" marker-end=\"url(#ar-accent)\"/><circle cx=\"748\" cy=\"230\" r=\"14\" fill=\"MUTED\"/><polyline points=\"748,230 508,230 428,280 348,230 148,230\" stroke=\"INK\" stroke-width=\"4\" fill=\"none\" marker-end=\"url(#ar)\"/><circle cx=\"428\" cy=\"280\" r=\"9\" fill=\"INK\"/>",
+      "object_labels": [
+        { "x": 0, "y": 60, "text": "온라인으로 해지된 63건", "color": "ACCENT", "anchor": "start" },
+        { "x": 0, "y": 315, "text": "전화가 필요했던 4건", "color": "MUTED", "anchor": "start" }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "narrative_role": "결과",
+      "context_label": "67건 구독 중",
+      "hero_copy": [],
+      "hero_number": { "value": "4", "unit": "건" },
+      "support_copy": "온라인으로는 안 됐던 건수. 상담원과 전화해야 끝났다.",
+      "footnote": ["67건 구독 중 63건은 온라인에서 해지가 끝났다.", "나머지 4건만 전화가 필요했다."],
+      "object_state": "이 슬라이드는 숫자가 화살표를 대신한다. 화살표는 잠시 화면에서 물러난다.",
+      "layout": "number",
+      "object_height": 0,
+      "object_svg": "",
+      "object_labels": []
+    },
+    {
+      "slide_number": 5,
+      "narrative_role": "오해 방지",
+      "context_label": "자주 하는 오해",
+      "hero_copy": ["온라인으로 됐다고", "쉬웠다는 뜻은", "아니다"],
+      "hero_number": null,
+      "support_copy": "특정 문구를 그대로 입력하게 하거나, 여러 화면을 거치게 만든 곳도 있었다.",
+      "footnote": ["미국·독일·네덜란드·영국 뉴스 구독 67건 기준.", "가려진 구간=편집자의 해석."],
+      "object_state": "온라인으로 이어지는 굵은 화살표 가운데 한 구간이 네모난 판으로 가려진다. 화살표는 판 너머까지 이어져 끝에 도달한다.",
+      "layout": "mid-object",
+      "object_height": 260,
+      "object_svg": "<circle cx=\"748\" cy=\"150\" r=\"14\" fill=\"MUTED\"/><line x1=\"748\" y1=\"150\" x2=\"148\" y2=\"150\" stroke=\"ACCENT\" stroke-width=\"7\" marker-end=\"url(#ar-accent)\"/><rect x=\"398\" y=\"115\" width=\"180\" height=\"70\" fill=\"BG\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        { "x": 0, "y": 190, "text": "결국 해지는 됐다", "color": "ACCENT", "anchor": "start" }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "narrative_role": "개방",
+      "context_label": "남은 질문",
+      "hero_copy": ["이 정도 장벽이", "사람을 포기시킬까"],
+      "hero_number": null,
+      "support_copy": "연구자가 직접 가입·해지해 본 감사 연구다. 실제 이용자의 포기 여부는 다루지 않았다.",
+      "footnote": ["이 질문은 연구 결과가 아니라", "편집자가 남기는 질문이다."],
+      "object_state": "화살표의 뒷부분이 점선으로 흐려지고, 끝은 속이 빈 점선 원으로 남는다. 도착하지 않은 채 열려 있다.",
+      "layout": "center-object",
+      "object_height": 260,
+      "object_svg": "<circle cx=\"668\" cy=\"130\" r=\"14\" fill=\"ACCENT\"/><line x1=\"668\" y1=\"130\" x2=\"448\" y2=\"130\" stroke=\"ACCENT\" stroke-width=\"7\"/><line x1=\"448\" y1=\"130\" x2=\"228\" y2=\"130\" stroke=\"MUTED\" stroke-width=\"4\" stroke-dasharray=\"10 9\"/><circle cx=\"228\" cy=\"130\" r=\"16\" fill=\"none\" stroke=\"MUTED\" stroke-width=\"6\" stroke-dasharray=\"9 8\"/>",
+      "object_labels": [
+        { "x": 668, "y": 170, "text": "해지 시도", "color": "ACCENT" },
+        { "x": 228, "y": 170, "text": "실제 이용자는?", "color": "MUTED" }
+      ]
+    }
+  ],
+
+  "caption": "가입은 쉬웠다. 해지도 그럴 줄 알았다.\n\n연구팀은 미국(캘리포니아·텍사스)·독일·네덜란드·영국에서 직접 페르소나 다섯을 만들어 뉴스 사이트 34곳에 가입했다. 성공한 구독은 67건. 그리고 하나하나 해지를 시도하며 그 과정을 기록했다.\n\n결과. 67건 중 63건은 결국 온라인에서 해지할 수 있었다. 나머지 4건은 상담원과 전화로 통화해야만 끝났다. 온라인으로 된 63건도 순탄하지만은 않았다. 특정 문구를 그대로 입력하게 하거나, 여러 화면을 거치게 만든 사이트도 있었다.\n\n주의할 점. 이 연구는 연구자가 직접 가입하고 해지해 본 감사(audit) 연구다. 실제 이용자가 이 과정에서 얼마나 포기하거나 그대로 결제를 유지하게 되는지는 측정하지 않았다. 조사 대상은 데스크톱 환경의 주간·월간 뉴스 구독으로 한정되며, 연간 구독·모바일 앱·다른 업종 서비스, 글로벌 사우스 국가는 다루지 않았다. CHI 2024에서 발표된 동료평가 논문이다.",
+
+  "hashtags": ["#HCI", "#다크패턴", "#UX리서치", "#구독해지", "#인터랙션디자인",
+               "#디지털행동", "#UX실패", "#CHI2024", "#연구노트", "#사용자경험"],
+
+  "alt_texts": [
+    "웜 오프화이트 배경 위 검은 화살표 하나가 왼쪽 버튼에서 오른쪽으로 곧게 뻗어 있다. 큰 글씨로 '가입은 버튼 하나로 시작된다'.",
+    "보라색 화살표가 오른쪽 '구독 중' 지점에서 왼쪽 '해지' 지점으로 향하며 중간에 점 하나가 찍혀 있다.",
+    "굵은 보라색 화살표는 위쪽에서 곧장 끝까지 이어지고, 아래쪽 가는 화살표는 중간에 아래로 우회했다가 다시 합류해 끝에 닿는다. 둘 다 끝에 도달한다. '온라인으로 해지된 63건', '전화가 필요했던 4건' 라벨.",
+    "화면 대부분을 차지하는 큰 숫자 '4'와 작은 글씨 '건'. 오브젝트 없이 숫자가 화면을 지배한다.",
+    "보라색 화살표 가운데 구간이 점선 테두리의 네모 판으로 가려져 있지만, 화살표는 판 너머까지 이어져 왼쪽 끝에 도달한다.",
+    "화살표의 뒷부분이 점선으로 흐려지다가 속이 빈 점선 원으로 끝난다. 도착점이 열린 채로 남아 있다."
+  ],
+
+  "verification_items": [
+    "구독 67건, 해지 성공(온라인) 63건, 전화 필요 4건 — arXiv 원문 문장과 대조 완료 (F1~F3). 67건 모두 결국 해지됐으며 4건이 '실패'가 아니라 '전화라는 다른 경로로 완료'됐다는 점을 슬라이드 3·4 문구에서 명확히 함",
+    "상담원 전화·특정 문구 입력 같은 의도적 장벽에 대한 저자들의 정성적 서술 — 원문 'forcing users to call a representative or type in a phrase' 대조 완료 (F4, attempt 2 지적에 따라 특정 사이트 수를 세는 수치가 아님을 명시)",
+    "해지 관련 평균 클릭 수 비교(4.9/5.8/6.2/3.5 등)는 attempt 1 GPT 검증에서 페르소나-국가 조합을 잘못 옮겼다는 blocker를 받아 전량 삭제. 재확인 과정에서도 fetch 결과가 서로 엇갈려(예: 유럽 현지 가입 클릭 수가 미국과 동일하게 나온 경우) 신뢰도를 확신할 수 없었다 — 반복 확인된 67/63/4만 사용",
+    "1장 '가입은 버튼 하나로 시작된다'는 가입 버튼의 크기·눈에 띔 정도를 측정했다는 주장이 아니라 일반적인 행동 묘사로 제한 (attempt 2에서 '어디서나 컸다'는 표현이 연구 범위를 벗어난다는 blocker를 받아 수정)",
+    "저자들이 직접 가입·해지를 시도한 감사 연구이며 무작위 배정 실험이 아님을 design.type·caption에 명시",
+    "CHI 2024 정식 게재 논문 — is_preprint: false로 설정, 프리프린트 고지 불필요"
+  ],
+
+  "human_check_items": [
+    "https://arxiv.org/abs/2309.17145 링크가 실제로 열리는지, ACM 정식본과 내용이 다르지 않은지",
+    "클릭 수 비교 수치를 전부 뺀 이번 버전이 원문의 핵심을 충분히 전달하는지, 혹은 사람이 원문 Figure 4를 직접 보고 정확한 수치를 되살릴지 판단",
+    "6장 '사람을 포기시킬까' 질문이 연구 결과처럼 읽히지 않는지",
+    "해시태그 톤이 계정과 맞는지"
+  ],
+
+  "status": "awaiting_human_review"
+}

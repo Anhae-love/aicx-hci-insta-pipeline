@@ -1,0 +1,8 @@
+﻿[03:50:04] INFO  ─────────────────────────────────────────────
+[03:50:04] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[03:50:04] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:50:04] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.295\d2e29494ec83\claude.exe
+[03:50:04] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:50:04] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\2e5e00daee91c61d\codex.exe
+[03:50:04] INFO  인증: 저장된 자격증명 파일
+[03:50:04] INFO  claude 헤드리스 세션 시작 …

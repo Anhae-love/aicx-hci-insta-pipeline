@@ -1,0 +1,29 @@
+﻿[03:31:33] INFO  ─────────────────────────────────────────────
+[03:31:33] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[03:31:33] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:31:34] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.299\f0584be0fbaf\claude.exe
+[03:31:34] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[03:31:34] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\e78bad9887fa50cf\codex.exe
+[03:31:34] INFO  인증: 저장된 자격증명 파일
+[03:31:34] INFO  claude 헤드리스 세션 시작 …
+[03:43:54] INFO  claude 종료  exit=0  12.3분
+[03:43:54] INFO  ── 출력 끝부분 ──
+I ran today's pipeline (Sunday, 2026-10-18) start to finish. It ended at **`awaiting_human_review`**, and GPT cross-verification passed on the first attempt with 0 issues.
+
+- **Paper:** *To Stop or Not to Stop: Exploring the Intention-Behavior Gaps in Smartphone Usage* (Zheng & Choe), https://arxiv.org/abs/2609.08909. I read the full text. I looked at 12 candidates; the runner-up was the app activity log study (2609.24477).
+- **What the study did:** 37 US Android users who wanted to cut back on phone use were asked mid-use, for at least two weeks, "I should ___ using my phone now" (1 = stop, 10 = continue). The app logged how long they kept going until they locked the screen.
+- **Main number on the cards:** in 14.9% of the 5,772 responses, people answered on the "stop" side and still used the phone for more than 5 more minutes. That is a bit over half of all "stop" answers. The 14.9% counts moments, not people, and slide 4 says so.
+- **Night finding:** at night, answers leaned more toward "stop", but once other factors are accounted for, people did not lock the screen noticeably earlier. I recorded that as a non-significant result, so the cards never say "people used it longer at night".
+- **Visual:** the object is the stop–continue slider the study itself used, in accent color `#3D7A45`.
+- **Self-check:** passed with 0 errors and 0 warnings.
+- **Output check:** I opened all six final PNGs; nothing is cut off or overlapping.
+- **Bookkeeping:** I added one line to `state/index.jsonl` and wrote `NOTES.md`.
+
+Things to check before posting (all in `NOTES.md`):
+1. **Publication status is unconfirmed.** The paper says it is published in PACMHCI (MobileHCI 2026), but its DOI (10.1145/3821659) returned 404 this morning and isn't registered yet. I didn't label it a preprint. Instead the caption says the official DOI page isn't open yet and the arXiv version was checked. If the DOI never resolves, switch the caption to the standard preprint notice.
+2. **"A bit over half" is my own calculation** (14.9% ÷ 28.3%). The paper doesn't state it directly.
+3. **Topic overlap:** the 10-09 (infinite-scroll stop prompts) and 09-27 (notification blocking) posts are also about stopping phone use. You may want to space them apart when scheduling.
+
+Everything is in `output/20261018_그만_쓸까_물었을_때와_실제_사용/`.
+[03:43:54] INFO  결과: 20261018_그만_쓸까_물었을_때와_실제_사용  status=awaiting_human_review  PNG=6장
+[03:43:54] INFO  파이프라인 종료

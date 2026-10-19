@@ -1,0 +1,36 @@
+﻿[04:14:33] INFO  ─────────────────────────────────────────────
+[04:14:33] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[04:14:33] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:14:33] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.293\83cb0bd7fed4\claude.exe
+[04:14:33] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:14:33] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\5ea220ae823df3d7\codex.exe
+[04:14:33] INFO  인증: 저장된 자격증명 파일
+[04:14:33] INFO  claude 헤드리스 세션 시작 …
+[04:28:14] INFO  claude 종료  exit=0  13.7분
+[04:28:14] INFO  ── 출력 끝부분 ──
+I finished today's pipeline. The six cards are in **`output/20261008_자라는_영상을_올린_새벽_피드_실험/`** with status `awaiting_human_review`, and nothing was posted to Instagram.
+
+**Topic (Thursday: recommendation systems and algorithms):** *Unintended Consequences of Recommender System Interventions* (arXiv 2606.08265, a preprint).
+- **The experiment:** a large Chinese short-video platform randomly picked some users. For them, it raised the recommendation score of celebrity "time to go to sleep" videos between 1 and 5 a.m. The analysis covered 200,000 users.
+- **The result:** late-night app use in that group went up 14.75% during the campaign week, the opposite of the intent. The increase was still 3.6–6.9% eight weeks after the campaign ended.
+- **The authors' explanation:** the recommendation algorithm learned from how people reacted to those videos. This is their interpretation, not something they observed directly.
+
+**How it went**
+- I reviewed 11 candidates. The second choice was a study on how the placement of Amazon's AI review summaries affects judgments.
+- `facts.json` holds 23 quotes from the paper. A script checked each one against the original text, and all 23 match.
+- The self-check passed with 0 errors and 1 warning. I left the warning: it flags "1~5시" on slide 2, but that slide is describing exactly that time window.
+- GPT verification passed on attempt 1 with two minor issues: the wording on slides 2 and 4 was ambiguous. I used GPT's suggested wording. That changed the meaning slightly, so I re-verified, and attempt 2 passed with no issues.
+- I opened the rendered PNGs and saw no clipped or overlapping text.
+- I added a line to `state/index.jsonl`. The object is a crescent moon and the accent color is #5B3F8C.
+
+**What you need to check before posting** (also in `NOTES.md`)
+- The 14.75% on slide 4 compares everyone assigned to the changed feed with everyone left alone. Only 18% of the changed group actually saw the video. The cards say this, but please check it can't be misread.
+- The study measured app usage, not sleep. Slide 5 says this explicitly.
+- The experiment ran in 2022 and the paper is a preprint released in 2026. I found no published journal version.
+- The accent color #5B3F8C may look too close to the indigo from 10/03 (#4A4FA3), which was never posted.
+
+The Canva connector needs authorization in your claude.ai connector settings, but this pipeline doesn't use it.
+
+Sources: [arXiv 2606.08265](https://arxiv.org/abs/2606.08265) · [RePEc listing](https://econpapers.repec.org/paper/arxpapers/2606.08265.htm)
+[04:28:14] INFO  결과: 20261008_자라는_영상을_올린_새벽_피드_실험  status=awaiting_human_review  PNG=6장
+[04:28:14] INFO  파이프라인 종료

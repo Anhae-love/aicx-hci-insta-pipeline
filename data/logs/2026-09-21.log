@@ -1,0 +1,46 @@
+﻿[19:12:38] WARN  절전 차단 실패 (계속 진행): "SetThreadExecutionState"에 대해 값이 "-2147483647"인 "esFlags" 인수를 "System.UInt32" 유형으로 변환할 수 없습니다: "값 "-2147483647"을(를) "System.UInt32" 유형으로 변환할 수 없습니다. 오류: "값이 너무 크거나 작아 UInt32 형식에 맞지 않습니다.""
+[19:12:38] INFO  ─────────────────────────────────────────────
+[19:12:38] INFO  파이프라인 시작  (DryRun=True, Bypass=False, Timeout=75m)
+[19:12:38] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.275\claude.exe
+[19:12:38] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\12219cbfbcbddde7\codex.exe
+[19:12:38] INFO  claude 헤드리스 세션 시작 …
+[19:12:38] INFO  claude 종료  exit=  0분
+[19:12:38] ERROR 치명적 오류: 'Raw' 및 'Tail' 매개 변수는 동일한 명령에서 지정할 수 없습니다.
+[19:12:38] ERROR 위치: <ScriptBlock>, C:\Users\CXlab\Desktop\개인 프로젝트 야르~\인스타 프로젝트 야르~\automation\run_daily.ps1: 158번째 줄
+[19:19:36] WARN  절전 차단 실패 (계속 진행): Cannot convert argument "esFlags", with value: "-2147483647", for "SetThreadExecutionState" to type "System.UInt32": "Cannot convert value "-2147483647" to type "System.UInt32". Error: "Value was either too large or too small for a UInt32.""
+[19:19:36] INFO  ─────────────────────────────────────────────
+[19:19:36] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[19:19:36] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.275\claude.exe
+[19:19:36] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\12219cbfbcbddde7\codex.exe
+[19:19:36] INFO  claude 헤드리스 세션 시작 …
+[19:19:36] INFO  claude 종료  exit=  0분
+[19:19:36] ERROR 치명적 오류: The 'Raw' and 'Tail' parameters cannot be specified in the same command.
+[19:19:36] ERROR at <ScriptBlock>, C:\Users\CXlab\Desktop\개인 프로젝트 야르~\인스타 프로젝트 야르~\automation\run_daily.ps1: line 158
+at <ScriptBlock>, <No file>: line 3
+at <ScriptBlock>, <No file>: line 1
+[19:44:18] INFO  ─────────────────────────────────────────────
+[19:44:18] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[19:44:18] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.275\claude.exe
+[19:44:18] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\12219cbfbcbddde7\codex.exe
+[19:44:18] INFO  인증: 저장된 자격증명 파일
+[19:44:18] INFO  claude 헤드리스 세션 시작 …
+[19:53:29] INFO  claude 종료  exit=0  9.2분
+[19:53:29] INFO  ── 출력 끝부분 ──
+GPT 교차검증(attempt 1)을 백그라운드에서 돌리는 중이다. 끝나면 `verdict.json`을 읽고 종료 코드에 따라 다음 단계로 간다.
+
+현재까지 진행 상황은 다음과 같다.
+
+- **오늘 주제:** 월요일, 인간-AI 협업·신뢰·의존·판단.
+- **선정 논문:** "Cognitive offloading and the speedup illusion in human-AI interaction" (arXiv 2605.23177). 사전등록 실험이고 참가자는 1,237명이다. arXiv HTML 본문에서 핵심 수치를 원문 문장으로 대조했다.
+- **선정 이유:** 실험 설계라 상관과 인과 문제가 없고, 집단 비교도 없다. 단일 오브젝트 "시간 막대"로 그릴 수 있다. 과거 오브젝트 "두 개의 점"과 겹치지 않고, 강조색은 `#B5462A`다.
+- **탈락 후보:** 8건을 검토해 사유를 `content.json`의 `candidates`에 적었다. 2순위는 연금 포트폴리오 실험(arXiv 2608.11371)이다.
+- **원문 접근 실패:** SSRN의 Shaw & Nave 논문은 403으로 열리지 않아 제외했다.
+- **자가 검사:** 오류 0건, 경고 0건으로 통과했다.
+- **권한 제약:** 무인 실행 정책이 `curl`과 허용 목록 밖의 `python`을 막았다. 우회하지 않고 `Write`와 `WebFetch`만 썼다.
+
+**게시 전 사람이 확인할 것:** 이 논문이 CogSci 2026 프로시딩에 실제로 실렸는지는 arXiv의 Comments 필드로만 확인했다. 그래서 프리프린트 고지를 뺐다. 게재가 확인되지 않으면 캡션에 프리프린트 문구를 넣어야 한다. 이 항목은 `human_check_items`에도 남겼다.
+
+STATUS, NOTES.md, `state/index.jsonl`은 검증과 카드 제작이 끝난 뒤에 쓴다.
+[19:53:29] INFO  결과: 20260921_AI와_함께하면_빨라질_거라는_기대  status=no_output  PNG=0장
+[19:53:29] WARN  사람 확인 필요 — status=no_output
+[19:53:29] INFO  파이프라인 종료
