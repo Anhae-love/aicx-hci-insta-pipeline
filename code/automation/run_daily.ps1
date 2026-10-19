@@ -19,12 +19,25 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$Here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$Root = Split-Path -Parent $Here
+$Here = Split-Path -Parent $MyInvocation.MyCommand.Path   # …/code/automation
+$CodeRoot = Split-Path -Parent $Here                      # …/code
+# 프로젝트 루트: code/data 분리 구조면 CodeRoot 의 부모, 평면 구조면 CodeRoot 자신.
+if ((Split-Path -Leaf $CodeRoot) -eq 'code') {
+    $Root = Split-Path -Parent $CodeRoot
+} else {
+    $Root = $CodeRoot
+}
 
-$LogDir = Join-Path $Root 'logs'
-$OutDir = Join-Path $Root 'output'
-$StateDir = Join-Path $Root 'state'
+# 데이터는 data/ 아래(분리 구조). 없고 평면 구조(루트 바로 아래)면 그걸 쓴다.
+$DataRoot = Join-Path $Root 'data'
+if (-not (Test-Path $DataRoot) -and (Test-Path (Join-Path $Root 'output'))) {
+    $DataRoot = $Root   # 평면 구조 하위호환
+}
+
+$LogDir   = Join-Path $DataRoot 'logs'
+$OutDir   = Join-Path $DataRoot 'output'
+$StateDir = Join-Path $DataRoot 'state'
+$DocsDir  = Join-Path $Root 'docs'
 foreach ($d in @($LogDir, $OutDir, $StateDir)) {
     if (-not (Test-Path $d)) { New-Item -ItemType Directory -Force -Path $d | Out-Null }
 }
@@ -127,7 +140,7 @@ try {
     }
 
     # 인자로 넘어가므로 줄바꿈 없이 한 줄로 둔다.
-    $kick = 'automation/pipeline_prompt.md 를 읽고 그 지시를 처음부터 끝까지 수행하라. ' +
+    $kick = 'code/automation/pipeline_prompt.md 를 읽고 그 지시를 처음부터 끝까지 수행하라. ' +
             '사람은 자고 있다. 질문하지 말고, 막히면 STATUS 와 NOTES.md 를 남기고 종료하라.'
     if ($DryRun) {
         $kick += ' [DRY RUN] 4단계 GPT 교차검증까지만 수행하고 5단계 카드 렌더는 하지 마라. STATUS 에 dry_run 이라고 적어라.'
@@ -223,6 +236,42 @@ try {
     if ($status -ne 'awaiting_human_review' -and -not $DryRun) {
         Write-Log "사람 확인 필요 — status=$status" 'WARN'
     }
+
+    # ── 대시보드 갱신 + GitHub push ─────────────────────────────────────
+    # manifest 를 다시 만들고(코드/데이터 분리: 대시보드는 이 인덱스만 읽는다)
+    # docs 와 data 를 저장소에 올린다. Pages 가 자동 재배포되어 폰에서 갱신된다.
+    # 이 블록이 실패해도 파이프라인 전체를 죽이지 않는다 (카드는 이미 만들어졌다).
+    if (-not $DryRun) {
+        try {
+            if (Test-Path (Join-Path $Root '.git')) {
+                $py = (Get-Command python -ErrorAction SilentlyContinue).Source
+                if (-not $py) { $py = (Get-Command py -ErrorAction SilentlyContinue).Source }
+                if ($py) {
+                    Write-Log 'manifest 재생성 …'
+                    & $py (Join-Path $Here 'build_manifest.py') $Root $DocsDir 2>&1 |
+                        ForEach-Object { Write-Log "  $_" }
+                }
+                Push-Location $Root
+                try {
+                    git add docs data 2>&1 | Out-Null
+                    $staged = (git status --porcelain docs data) -join ''
+                    if ($staged) {
+                        $msg = 'auto: ' + (Get-Date -Format 'yyyy-MM-dd') + ' 콘텐츠'
+                        git commit -m $msg 2>&1 | ForEach-Object { Write-Log "  git: $_" }
+                        git push 2>&1 | ForEach-Object { Write-Log "  git: $_" }
+                        Write-Log '대시보드 push 완료 — 폰에서 곧 갱신된다'
+                    } else {
+                        Write-Log '변경 없음 — push 생략'
+                    }
+                } finally { Pop-Location }
+            } else {
+                Write-Log '.git 이 없다 — 저장소 연결 전이라 push 생략 (셋업 안내서 참고)' 'WARN'
+            }
+        } catch {
+            Write-Log "대시보드 push 실패 (카드는 정상 생성됨): $($_.Exception.Message)" 'WARN'
+        }
+    }
+
     Write-Log '파이프라인 종료'
 }
 catch {

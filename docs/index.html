@@ -93,6 +93,22 @@
   .dot{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; vertical-align:middle}
   .dot.ok{background:var(--ok)} .dot.wait{background:var(--wait)} .dot.bad{background:var(--bad)}
 
+  /* 측정 루프 지표 */
+  .metrics{display:flex; gap:10px; flex-wrap:wrap; margin:0 0 6px}
+  .metric{flex:1; min-width:120px; border:1px solid var(--line); border-radius:10px;
+    padding:12px 14px; background:var(--panel)}
+  .metric .k{font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .metric .v{font-size:26px; font-weight:800; margin-top:2px; letter-spacing:-.02em}
+  .metric .v small{font-size:13px; font-weight:600; color:var(--sub)}
+  .rejreasons{margin:10px 0 0; border:1px solid var(--line); border-radius:10px; background:var(--panel); overflow:hidden}
+  .rejreasons .h{font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--faint);
+    font-weight:700; padding:10px 14px 6px}
+  .rejreasons ul{margin:0; padding:0 14px 12px; list-style:none}
+  .rejreasons li{font-size:12.5px; color:var(--sub); padding:5px 0; border-top:1px solid var(--line2)}
+  .rejreasons li:first-child{border-top:none}
+  .rejreasons .d{color:var(--faint); font-variant-numeric:tabular-nums; margin-right:7px}
+  .rejreasons mark{background:var(--hl-soft); color:var(--ink); font-weight:600}
+
   .empty{padding:40px 16px; text-align:center; color:var(--faint); font-size:14px}
   .foot{margin-top:36px; padding-top:14px; border-top:1px solid var(--line);
     font-size:11px; color:var(--faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px}
@@ -198,13 +214,41 @@ function render(m){
     </div>
   </div>`;
 
+  // 측정 루프 지표 (사람이 쌓은 결정이 있을 때만)
+  const mx = m.metrics || {};
+  if(mx.decided){
+    const rate = mx.approval_rate!=null ? Math.round(mx.approval_rate*100) : null;
+    html += `<h2>측정 루프 — 사람의 결정이 쌓인다</h2>`;
+    html += `<div class="metrics">`;
+    html += `<div class="metric"><div class="k">결정됨</div><div class="v">${mx.decided}<small> 건</small></div></div>`;
+    html += `<div class="metric"><div class="k">승인</div><div class="v">${mx.approved}<small> 건</small></div></div>`;
+    html += `<div class="metric"><div class="k">반려</div><div class="v">${mx.rejected}<small> 건</small></div></div>`;
+    if(rate!=null) html += `<div class="metric"><div class="k">승인율</div><div class="v">${rate}<small> %</small></div></div>`;
+    html += `</div>`;
+    if(mx.recent_rejects && mx.recent_rejects.length){
+      html += `<div class="rejreasons"><div class="h">최근 반려 사유 — 기획실이 이걸 읽고 피합니다</div><ul>`;
+      mx.recent_rejects.forEach(r=>{
+        html += `<li><span class="d">${esc(r.date)}</span><mark>${esc(r.reason)}</mark> · ${esc(r.title)}</li>`;
+      });
+      html += `</ul></div>`;
+    }
+  }
+
   // 이력
   if(m.history && m.history.length > 1){
-    html += `<h2>지난 이력</h2><table class="hist"><thead><tr><th>날짜</th><th>제목</th><th>오브젝트</th><th>검증</th><th>상태</th></tr></thead><tbody>`;
+    html += `<h2>지난 이력</h2><table class="hist"><thead><tr><th>날짜</th><th>제목</th><th>검증<br><span style="font-weight:400;text-transform:none">기계</span></th><th>사람 결정</th><th>상태</th></tr></thead><tbody>`;
+    const DEC_KO = {approved:["승인","ok"], rejected:["반려","bad"]};
     m.history.slice(0,14).forEach(e=>{
       const [lab, c] = STATUS_KO[e.status] || STATUS_KO.unknown;
-      html += `<tr><td>${esc(e.date)}</td><td>${esc(e.title)}</td><td>${esc(e.object_name)}</td>` +
+      let decCell = "—";
+      if(e.decision && DEC_KO[e.decision]){
+        const [dl, dc] = DEC_KO[e.decision];
+        decCell = `<span class="dot ${dc}"></span>${dl}` +
+          (e.reject_reason ? ` <span style="color:var(--faint)" title="${esc(e.reject_reason)}">·사유</span>` : "");
+      }
+      html += `<tr><td>${esc(e.date)}</td><td>${esc(e.title)}</td>` +
               `<td>${esc(e.verdict)||"—"}${e.attempts?` <span style="color:var(--faint)">(${e.attempts})</span>`:""}</td>` +
+              `<td>${decCell}</td>` +
               `<td><span class="dot ${c}"></span>${lab}</td></tr>`;
     });
     html += `</tbody></table>`;

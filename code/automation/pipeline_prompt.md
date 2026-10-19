@@ -3,16 +3,21 @@
 너는 HCI 인스타그램 계정의 콘텐츠를 **무인으로** 제작한다.
 사람은 지금 자고 있다. 도중에 질문하지 마라. 막히면 멈추고 기록을 남겨라.
 
-프로젝트 루트는 이 파일의 상위 폴더다. 아래 경로는 전부 루트 기준이다.
+너의 작업 디렉터리는 **프로젝트 루트**다. 아래 경로는 전부 루트 기준이다.
+
+이 프로젝트는 **코드와 데이터가 분리**돼 있다:
+- **코드**(읽기 전용 자원): `code/` — `code/automation/`, `code/prompts/`
+- **데이터**(네가 쓰는 결과): `data/` — `data/output/`, `data/state/`, `data/logs/`
 
 ---
 
 ## 먼저 읽을 것
 
-1. `HCI_인스타그램_콘텐츠_프롬프트_v3.md` — **무엇을 쓸지.** 이게 본체다
-2. `automation/content_contract.md` — **어떤 형태로 쓸지**
-3. `automation/sample_content.json` · `automation/sample_facts.json` — 작동하는 실제 예시
-4. `state/index.jsonl` — 과거 발행 이력 (없으면 첫 실행)
+1. `code/prompts/HCI_인스타그램_콘텐츠_프롬프트_v3.md` — **무엇을 쓸지.** 이게 본체다
+2. `code/automation/content_contract.md` — **어떤 형태로 쓸지**
+3. `code/automation/sample_content.json` · `code/automation/sample_facts.json` — 작동하는 실제 예시
+4. `data/state/index.jsonl` — 과거 발행 이력 (없으면 첫 실행)
+5. `data/state/decisions.jsonl` — 사람이 반려/승인한 기록 (없으면 아직 없음). **0단계에서 쓴다.**
 
 ---
 
@@ -20,13 +25,27 @@
 
 오늘 날짜와 요일을 확인한다. v3 요일표에서 오늘의 주제를 찾는다.
 
-`state/index.jsonl`을 읽어 다음을 배제 목록으로 삼는다.
+`data/state/index.jsonl`을 읽어 다음을 배제 목록으로 삼는다.
 
 - 이미 다룬 `source_url` / `source_title` (같은 논문 재탕 금지)
 - 최근 60일 안에 쓴 `object_name` (오브젝트 재사용 금지)
 - 최근 14일 안에 쓴 `accent_color` (색 반복 방지)
 
-작업 폴더를 만든다: `output/<YYYYMMDD>_<주제 요약>/`
+### 사람의 반려 사유를 반영한다 (측정 루프)
+
+`data/state/decisions.jsonl`이 있으면 읽는다. 각 줄은 사람이 내린 결정이다:
+`{"folder","date","decision":"approved|rejected","reason","decided_at"}`.
+
+- **최근 30일 안의 `rejected` 사유를 전부 읽는다.** 이것이 "사람이 무엇을 싫어했는지"다.
+- 반려 사유에서 반복되는 패턴을 오늘 기획에 **먼저** 반영한다. 예:
+  - "주제가 시의성 없음" → 오늘은 더 최신·화제성 있는 논문을 고른다
+  - "톤이 안 맞음" → 그 톤을 피한다
+  - "서사가 빈약·3인칭" → 1인칭 서사를 더 강하게 잡는다
+  - "미감(색·여백)" → 그 색·레이아웃을 피한다
+- **같은 사유로 두 번 반려당하지 않는 것**이 이 단계의 목표다.
+- 반영한 내용을 나중에 `NOTES.md`에 "이전 반려 사유 X를 이렇게 반영함"으로 적는다.
+
+작업 폴더를 만든다: `data/output/<YYYYMMDD>_<주제 요약>/`
 주제 요약은 공백 대신 `_`, 파일명 금지문자 제외, 40자 이내.
 
 ---
@@ -48,7 +67,7 @@ v3의 '자료 조사' 절을 그대로 따른다. 최소 8개 후보를 검토�
 
 **카피를 쓰기 전에 이것부터 쓴다. 순서를 바꾸지 마라.**
 
-작업 폴더에 `facts.json`을 만든다. 형식은 `automation/content_contract.md`의
+작업 폴더에 `facts.json`을 만든다. 형식은 `code/automation/content_contract.md`의
 'facts.json' 절에 있다. 원문을 열어둔 채로 쓴다.
 
 - 모든 `findings[].source_quote`는 **원문에 실제로 있는 문장**이어야 한다.
@@ -66,7 +85,7 @@ v3의 '자료 조사' 절을 그대로 따른다. 최소 8개 후보를 검토�
 
 ## 3. content.json 작성
 
-`automation/content_contract.md`의 계약대로 작업 폴더에 `content.json`을 쓴다.
+`code/automation/content_contract.md`의 계약대로 작업 폴더에 `content.json`을 쓴다.
 
 **이제 원문이 아니라 `facts.json`을 보고 쓴다.** 카드에 올라가는 모든 수치는
 거기 있어야 한다. 없으면 카피를 고치는 게 아니라, 원문으로 돌아가 확인하고
@@ -84,10 +103,10 @@ hero_copy의 동사를 하나하나 확인한다. 상관 연구에 "바꿨다", 
 ## 4. 자가 검사
 
 ```bash
-python automation/render.py "output/<폴더>/content.json" --check-only
+python code/automation/render.py "data/output/<폴더>/content.json" --check-only
 ```
 
-종료 코드 `2`면 `output/<폴더>/render_report.json`의 `errors`를 전부 고치고 다시 돌린다.
+종료 코드 `2`면 `data/output/<폴더>/render_report.json`의 `errors`를 전부 고치고 다시 돌린다.
 **통과할 때까지 5단계로 넘어가지 않는다.** `warnings`도 가능하면 고친다.
 
 ---
@@ -95,7 +114,7 @@ python automation/render.py "output/<폴더>/content.json" --check-only
 ## 5. GPT 교차검증
 
 ```bash
-python automation/verify.py --dir "output/<폴더>" --attempt 1
+python code/automation/verify.py --dir "data/output/<폴더>" --attempt 1
 ```
 
 Codex(GPT)가 원문을 직접 대조하고 판정한다. 5~10분 걸린다.
@@ -105,7 +124,7 @@ Codex(GPT)가 원문을 직접 대조하고 판정한다. 5~10분 걸린다.
 > codex 도 같이 죽는다. 그러면 검증도 카드도 없이 빈 폴더만 남는다.
 > 10분 기다리는 건 정상이다. 멈춘 게 아니다. 타임아웃은 스크립트가 알아서 건다.
 
-결과는 `output/<폴더>/verdict.json`.
+결과는 `data/output/<폴더>/verdict.json`.
 
 ### 종료 코드에 따라
 
@@ -138,7 +157,7 @@ Codex(GPT)가 원문을 직접 대조하고 판정한다. 5~10분 걸린다.
 ## 6. 카드 제작
 
 ```bash
-python automation/render.py "output/<폴더>/content.json"
+python code/automation/render.py "data/output/<폴더>/content.json"
 ```
 
 `slide_1~6.png`, `slide_1~6.svg`, `caption.txt`, `alt_texts.txt`가 생긴다.
@@ -158,16 +177,16 @@ python automation/render.py "output/<폴더>/content.json"
 
 ## 7. 마무리
 
-`output/<폴더>/STATUS`에 한 줄로 상태를 적는다:
+`data/output/<폴더>/STATUS`에 한 줄로 상태를 적는다:
 `awaiting_human_review` / `needs_human` / `rejected` / `verify_failed`
 
-`awaiting_human_review`인 경우에만 `state/index.jsonl`에 한 줄을 덧붙인다:
+`awaiting_human_review`인 경우에만 `data/state/index.jsonl`에 한 줄을 덧붙인다:
 
 ```json
 {"date":"","weekday_category":"","content_title":"","source_title":"","source_url":"","object_name":"","accent_color":"","verdict":"pass","attempts":1,"folder":""}
 ```
 
-마지막으로 `output/<폴더>/NOTES.md`에 사람이 아침에 읽을 것을 적는다.
+마지막으로 `data/output/<폴더>/NOTES.md`에 사람이 아침에 읽을 것을 적는다.
 
 - 오늘 고른 주제와 이유
 - 탈락한 후보와 사유
@@ -181,7 +200,7 @@ python automation/render.py "output/<폴더>/content.json"
 
 ## 진행 기록
 
-단계에 들어갈 때마다 `output/<폴더>/PROGRESS.log`에 **한 줄씩** 덧붙인다.
+단계에 들어갈 때마다 `data/output/<폴더>/PROGRESS.log`에 **한 줄씩** 덧붙인다.
 
 ```
 2026-09-21 19:47 | 1.조사 | 후보 8건 검토 완료, 선정: <논문 제목>
@@ -211,5 +230,5 @@ python automation/render.py "output/<폴더>/content.json"
 - **`source_quote` 를 기억으로 쓰기.** 원문에 없는 인용은 최악의 위반이다
 - 접근 못 한 URL을 `source_url`에 적기
 - 사람에게 질문하고 응답 기다리기 (아무도 없다)
-- `output/` 밖의 기존 파일 수정. `state/index.jsonl` 추가만 예외
+- `data/output/` 밖의 기존 파일 수정. `data/state/index.jsonl` 추가만 예외
 - **오래 걸리는 명령을 백그라운드로 띄우고 턴 끝내기.** 너와 함께 죽는다

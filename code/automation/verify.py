@@ -27,7 +27,24 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-RULES = os.path.join(ROOT, "HCI_인스타그램_콘텐츠_프롬프트_v3.md")
+def _find_rules():
+    """v3 규칙 문서를 여러 배치에서 찾는다.
+    평면 구조: <root>/HCI_...v3.md
+    분리 구조: <root>/prompts/HCI_...v3.md  또는 <project>/code/prompts/...
+    """
+    name = "HCI_인스타그램_콘텐츠_프롬프트_v3.md"
+    cands = [
+        os.path.join(ROOT, name),                       # 평면: automation 의 부모
+        os.path.join(ROOT, "prompts", name),            # 분리: code/prompts
+        os.path.join(os.path.dirname(ROOT), name),      # 프로젝트 루트(조부모)
+        os.path.join(os.path.dirname(ROOT), "code", "prompts", name),
+    ]
+    for c in cands:
+        if os.path.isfile(c):
+            return c
+    return cands[0]  # 못 찾으면 첫 후보 (아래에서 shutil 이 명확히 실패)
+
+RULES = _find_rules()
 INSTR = os.path.join(HERE, "verify_prompt.md")
 SCHEMA = os.path.join(HERE, "verify_schema.json")
 

@@ -47,6 +47,14 @@ def main(root, docs):
     try: last_run = json.load(open(os.path.join(state_dir, "last_run.json"), encoding="utf-8"))
     except Exception: pass
 
+    # 사람의 결정 기록 (승인/반려) — 측정 루프의 재료
+    decisions = read_jsonl(os.path.join(state_dir, "decisions.jsonl"))
+    dec_by_folder = {}
+    for d in decisions:
+        f = d.get("folder")
+        if f:
+            dec_by_folder[f] = d   # 같은 폴더면 마지막(최신) 결정이 이긴다
+
     entries = []
     if os.path.isdir(output_dir):
         for folder in sorted(os.listdir(output_dir), reverse=True):
@@ -73,6 +81,7 @@ def main(root, docs):
             m = re.match(r"(\d{8})", folder)
             date = f"{m.group(1)[:4]}-{m.group(1)[4:6]}-{m.group(1)[6:8]}" if m else ""
 
+            dec = dec_by_folder.get(folder, {})
             entries.append({
                 "folder": folder,
                 "date": date or meta.get("date", ""),
@@ -88,12 +97,31 @@ def main(root, docs):
                 "cards": cards,
                 "caption": caption,
                 "notes": notes,
+                "decision": dec.get("decision", ""),      # approved / rejected / ""
+                "reject_reason": dec.get("reason", "") if dec.get("decision") == "rejected" else "",
             })
+
+    # 측정 루프 지표: 결정이 쌓인 것만 집계 (아직 결정 안 난 건 제외)
+    decided = [e for e in entries if e.get("decision")]
+    n_app = sum(1 for e in decided if e["decision"] == "approved")
+    n_rej = sum(1 for e in decided if e["decision"] == "rejected")
+    # 최근 반려 사유(기획실이 읽는 바로 그 신호)를 날짜 내림차순으로
+    recent_rejects = [
+        {"date": e["date"], "title": e["title"], "reason": e["reject_reason"]}
+        for e in entries if e.get("decision") == "rejected" and e.get("reject_reason")
+    ]
 
     manifest = {
         "generated_at": datetime.datetime.now().isoformat(timespec="seconds"),
         "last_run": last_run,
         "count": len(entries),
+        "metrics": {
+            "decided": len(decided),
+            "approved": n_app,
+            "rejected": n_rej,
+            "approval_rate": round(n_app / len(decided), 3) if decided else None,
+            "recent_rejects": recent_rejects[:8],
+        },
         "latest": entries[0] if entries else None,
         "history": entries,
     }
