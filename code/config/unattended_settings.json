@@ -24,9 +24,9 @@
       "Bash(npm:*)",
       "Bash(git:*)",
 
-      "Edit(HCI_인스타그램_콘텐츠_프롬프트_v3.md)",
-      "Edit(automation/**)",
-      "Edit(.claude/**)"
+      "Edit(code/**)",
+      "Edit(.claude/**)",
+      "Edit(docs/**)"
     ]
   }
 }

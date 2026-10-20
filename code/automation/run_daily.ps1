@@ -148,12 +148,44 @@ try {
 
     $cliArgs = @('-p', $kick, '--output-format', 'text')
 
-    # 무인 실행 전용 제약: 인스타 발행 차단 + 파이프라인 자기수정 차단
-    $unattended = Join-Path $Here 'unattended_settings.json'
-    if (Test-Path $unattended) {
-        $cliArgs += @('--settings', $unattended)
-    } else {
-        Write-Log 'unattended_settings.json 이 없다 — 발행 차단 규칙 없이 실행된다' 'WARN'
+    # 설정 파일은 code/config/ 에 있다(2026-10-19 code/data 분리).
+    # --settings 는 파일 하나만 받으므로(두 번 주면 마지막 것만 먹힐 수 있다),
+    # 기본 권한(claude_settings)과 무인 제약(unattended_settings)을 런타임에 병합해
+    # 임시 파일 하나로 만들어 넘긴다. allow 와 deny 를 둘 다 살린다.
+    $ConfigDir = Join-Path (Split-Path -Parent $Here) 'config'   # code/config
+    $baseSettings = Join-Path $ConfigDir 'claude_settings.json'
+    $unattended   = Join-Path $ConfigDir 'unattended_settings.json'
+
+    $mergedPath = $null
+    try {
+        $merged = @{ permissions = @{} }
+        if (Test-Path $baseSettings) {
+            $b = Get-Content $baseSettings -Raw -Encoding utf8 | ConvertFrom-Json
+            if ($b.permissions.allow) { $merged.permissions.allow = @($b.permissions.allow) }
+            if ($b.permissions.deny)  { $merged.permissions.deny  = @($b.permissions.deny) }
+        } else {
+            Write-Log 'claude_settings.json 이 없다 — 웹 도구 권한이 안 실려 조사가 막힐 수 있다' 'WARN'
+        }
+        if (Test-Path $unattended) {
+            $u = Get-Content $unattended -Raw -Encoding utf8 | ConvertFrom-Json
+            if ($u.permissions.deny) {
+                $existing = @(); if ($merged.permissions.deny) { $existing = @($merged.permissions.deny) }
+                $merged.permissions.deny = @($existing + @($u.permissions.deny) | Select-Object -Unique)
+            }
+            if ($u.permissions.allow) {
+                $existing = @(); if ($merged.permissions.allow) { $existing = @($merged.permissions.allow) }
+                $merged.permissions.allow = @($existing + @($u.permissions.allow) | Select-Object -Unique)
+            }
+        } else {
+            Write-Log 'unattended_settings.json 이 없다 — 발행 차단 규칙 없이 실행된다' 'WARN'
+        }
+        $mergedPath = Join-Path $LogDir "_settings_merged_${Stamp}.json"
+        ($merged | ConvertTo-Json -Depth 6) | Out-File -FilePath $mergedPath -Encoding utf8
+        $cliArgs += @('--settings', $mergedPath)
+        Write-Log "설정 병합: allow $($merged.permissions.allow.Count)개 / deny $($merged.permissions.deny.Count)개"
+    } catch {
+        Write-Log "설정 병합 실패 — 기본권한만 적용 시도: $($_.Exception.Message)" 'WARN'
+        if (Test-Path $baseSettings) { $cliArgs += @('--settings', $baseSettings) }
     }
 
     if ($Bypass) {
