@@ -1,0 +1,18 @@
+﻿[04:08:52] INFO  ─────────────────────────────────────────────
+[04:08:52] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[04:08:52] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:08:53] INFO  claude: C:\Users\CXlab\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.299\f0584be0fbaf\claude.exe
+[04:08:53] WARN  config.json 의 codex_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:08:53] INFO  codex:  C:\Users\CXlab\AppData\Local\OpenAI\Codex\bin\896a0166b774037a\codex.exe
+[04:08:53] INFO  인증: 저장된 자격증명 파일
+[04:08:53] WARN  unattended_settings.json 이 없다 — 발행 차단 규칙 없이 실행된다
+[04:08:53] INFO  claude 헤드리스 세션 시작 …
+[04:08:56] INFO  claude 종료  exit=1  0분
+[04:08:56] INFO  ── 출력 끝부분 ──
+Failed to authenticate: OAuth session expired and could not be refreshed
+[04:08:56] WARN  오늘 날짜의 결과 폴더가 없다
+[04:08:56] WARN  사람 확인 필요 — status=no_output
+[04:08:56] INFO  manifest 재생성 …
+[04:08:56] INFO    manifest 생성: C:\Users\CXlab\Desktop\개인 프로젝트 야르~\insta-pipeline\docs\data\manifest.json  (콘텐츠 24건)
+[04:08:56] INFO  파이프라인 종료
+[21:00:02] INFO  媛?쒕젅???쒖옉 (留덇컧 21:00, DryRun=False)
