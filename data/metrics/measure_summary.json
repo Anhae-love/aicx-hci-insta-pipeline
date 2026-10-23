@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-22T22:11:58",
+  "generated_at": "2026-10-23T22:13:43",
   "period": {
     "start": "2026-09-21",
-    "end": "2026-10-23",
-    "days": 33
+    "end": "2026-10-24",
+    "days": 34
   },
   "metric": "정상적으로 열리는 이미지 수 / 만들기로 한 이미지 수",
   "calendar": {
     "opened": 96,
-    "planned": 198,
-    "rate": 0.4848
+    "planned": 204,
+    "rate": 0.4706
   },
   "gate_passed": {
     "opened": 96,
@@ -20,7 +20,7 @@
   "status_counts": {
     "awaiting_human_review": 14,
     "expired_no_review": 2,
-    "missing": 9,
+    "missing": 10,
     "needs_human": 7,
     "verify_failed": 1
   },
@@ -33,7 +33,8 @@
     "2026-10-15",
     "2026-10-21",
     "2026-10-22",
-    "2026-10-23"
+    "2026-10-23",
+    "2026-10-24"
   ],
   "decisions": {
     "approved": 0,
@@ -43,7 +44,7 @@
   },
   "recent_rejects": [],
   "latest": {
-    "date": "2026-10-23",
+    "date": "2026-10-24",
     "folder": "",
     "status": "missing",
     "opened": 0,
@@ -51,14 +52,6 @@
     "reason": ""
   },
   "last_7_days": [
-    {
-      "date": "2026-10-17",
-      "folder": "20261017_방해받으며_메일에_답한_실험",
-      "status": "awaiting_human_review",
-      "opened": 6,
-      "decision": "",
-      "reason": ""
-    },
     {
       "date": "2026-10-18",
       "folder": "20261018_그만_쓸까_물었을_때와_실제_사용",
@@ -101,6 +94,14 @@
     },
     {
       "date": "2026-10-23",
+      "folder": "",
+      "status": "missing",
+      "opened": 0,
+      "decision": "",
+      "reason": ""
+    },
+    {
+      "date": "2026-10-24",
       "folder": "",
       "status": "missing",
       "opened": 0,
