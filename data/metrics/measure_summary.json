@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-24T22:13:19",
+  "generated_at": "2026-10-26T22:12:26",
   "period": {
     "start": "2026-09-21",
-    "end": "2026-10-25",
-    "days": 35
+    "end": "2026-10-27",
+    "days": 37
   },
   "metric": "정상적으로 열리는 이미지 수 / 만들기로 한 이미지 수",
   "calendar": {
     "opened": 96,
-    "planned": 210,
-    "rate": 0.4571
+    "planned": 222,
+    "rate": 0.4324
   },
   "gate_passed": {
     "opened": 96,
@@ -20,7 +20,7 @@
   "status_counts": {
     "awaiting_human_review": 14,
     "expired_no_review": 2,
-    "missing": 11,
+    "missing": 13,
     "needs_human": 7,
     "verify_failed": 1
   },
@@ -35,7 +35,9 @@
     "2026-10-22",
     "2026-10-23",
     "2026-10-24",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27"
   ],
   "decisions": {
     "approved": 0,
@@ -45,7 +47,7 @@
   },
   "recent_rejects": [],
   "latest": {
-    "date": "2026-10-25",
+    "date": "2026-10-27",
     "folder": "",
     "status": "missing",
     "opened": 0,
@@ -53,22 +55,6 @@
     "reason": ""
   },
   "last_7_days": [
-    {
-      "date": "2026-10-19",
-      "folder": "20261019_AI_추론_단계를_하나씩_되짚어_보니",
-      "status": "expired_no_review",
-      "opened": 6,
-      "decision": "expired",
-      "reason": "21:00까지 미검토 — 자동 보류 (사람 부재 가드레일)"
-    },
-    {
-      "date": "2026-10-20",
-      "folder": "20261020_조사_중단_권한_설정_누락",
-      "status": "needs_human",
-      "opened": 0,
-      "decision": "",
-      "reason": ""
-    },
     {
       "date": "2026-10-21",
       "folder": "",
@@ -103,6 +89,22 @@
     },
     {
       "date": "2026-10-25",
+      "folder": "",
+      "status": "missing",
+      "opened": 0,
+      "decision": "",
+      "reason": ""
+    },
+    {
+      "date": "2026-10-26",
+      "folder": "",
+      "status": "missing",
+      "opened": 0,
+      "decision": "",
+      "reason": ""
+    },
+    {
+      "date": "2026-10-27",
       "folder": "",
       "status": "missing",
       "opened": 0,

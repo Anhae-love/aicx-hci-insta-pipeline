@@ -1,0 +1,6 @@
+﻿[04:34:27] INFO  ─────────────────────────────────────────────
+[04:34:27] INFO  파이프라인 시작  (DryRun=False, Bypass=False, Timeout=75m)
+[04:34:27] WARN  config.json 의 claude_path 가 없는 경로다 — 자동 탐색으로 넘어간다
+[04:34:28] ERROR 치명적 오류: claude.exe 를 찾을 수 없다. HCI_CLAUDE_PATH 환경변수로 지정하라.
+[04:34:28] ERROR 위치: <ScriptBlock>, C:\Users\CXlab\Desktop\개인 프로젝트 야르~\insta-pipeline\code\automation\run_daily.ps1: 103번째 줄
+[21:00:02] INFO  媛?쒕젅???쒖옉 (留덇컧 21:00, DryRun=False)
