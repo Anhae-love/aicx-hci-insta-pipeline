@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-06T22:11:51",
+  "generated_at": "2026-11-07T22:11:24",
   "period": {
     "start": "2026-09-21",
-    "end": "2026-11-07",
-    "days": 48
+    "end": "2026-11-08",
+    "days": 49
   },
   "metric": "정상적으로 열리는 이미지 수 / 만들기로 한 이미지 수",
   "calendar": {
     "opened": 96,
-    "planned": 288,
-    "rate": 0.3333
+    "planned": 294,
+    "rate": 0.3265
   },
   "gate_passed": {
     "opened": 96,
@@ -20,7 +20,7 @@
   "status_counts": {
     "awaiting_human_review": 14,
     "expired_no_review": 2,
-    "missing": 24,
+    "missing": 25,
     "needs_human": 7,
     "verify_failed": 1
   },
@@ -48,7 +48,8 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-07"
+    "2026-11-07",
+    "2026-11-08"
   ],
   "decisions": {
     "approved": 0,
@@ -58,7 +59,7 @@
   },
   "recent_rejects": [],
   "latest": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "folder": "",
     "status": "missing",
     "opened": 0,
@@ -66,14 +67,6 @@
     "reason": ""
   },
   "last_7_days": [
-    {
-      "date": "2026-11-01",
-      "folder": "",
-      "status": "missing",
-      "opened": 0,
-      "decision": "",
-      "reason": ""
-    },
     {
       "date": "2026-11-02",
       "folder": "",
@@ -116,6 +109,14 @@
     },
     {
       "date": "2026-11-07",
+      "folder": "",
+      "status": "missing",
+      "opened": 0,
+      "decision": "",
+      "reason": ""
+    },
+    {
+      "date": "2026-11-08",
       "folder": "",
       "status": "missing",
       "opened": 0,
